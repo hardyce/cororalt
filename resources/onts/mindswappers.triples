@@ -1,0 +1,437 @@
+<http://www.mindswap.org/2004/owl/mindswappers#Aaron.Mannes> <http://xmlns.com/foaf/0.1/mbox> <mailto:awmannes@comcast.net> .
+<http://www.mindswap.org/2004/owl/mindswappers#Aaron.Mannes> <http://xmlns.com/foaf/0.1/homepage> <http://www.terrorprofiles.com/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Aaron.Mannes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Aaron.Mannes> <http://xmlns.com/foaf/0.1/name> "Aaron Mannes" .
+<http://www.mindswap.org/2004/owl/mindswappers#Aaron.Mannes> <http://www.w3.org/2000/01/rdf-schema#label> "Aaron Mannes" .
+<http://www.mindswap.org/2004/owl/mindswappers#Aaron.Mannes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Affiliate> .
+<http://www.mindswap.org/~ronwalf/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jennifer.Golbeck> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.mindswap.org/~golbeck/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jennifer.Golbeck> <http://xmlns.com/foaf/0.1/mbox> <mailto:golbeck@cs.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jennifer.Golbeck> <http://xmlns.com/foaf/0.1/homepage> <http://www.cs.umd.edu/~golbeck/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jennifer.Golbeck> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.cs.umd.edu/~golbeck/daml/golbeckFOAF.rdf> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jennifer.Golbeck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jennifer.Golbeck> <http://xmlns.com/foaf/0.1/name> "Jennifer Golbeck" .
+<http://www.mindswap.org/2004/owl/mindswappers#Jennifer.Golbeck> <http://www.w3.org/2000/01/rdf-schema#label> "Jennifer Golbeck" .
+<http://www.mindswap.org/2004/owl/mindswappers#Jennifer.Golbeck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Researcher> .
+<http://www.ldc.usb.ve/~ruckhaus/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/2004/owl/mindswappers#Debbie.Heisler> <http://xmlns.com/foaf/0.1/mbox> <mailto:heisler@cs.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Debbie.Heisler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Debbie.Heisler> <http://xmlns.com/foaf/0.1/name> "Debbie Heisler" .
+<http://www.mindswap.org/2004/owl/mindswappers#Debbie.Heisler> <http://www.w3.org/2000/01/rdf-schema#label> "Debbie Heisler" .
+<http://www.mindswap.org/2004/owl/mindswappers#Debbie.Heisler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#GraduateStudent> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fde .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Matt.Westhoff> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe1 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Kaoru.Hiramatsu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Vladimir_Kolovski> <http://xmlns.com/foaf/0.1/mbox> <mailto:kolovski@cs.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Vladimir_Kolovski> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Vladimir_Kolovski> <http://xmlns.com/foaf/0.1/name> "Vladimir Kolovski" .
+<http://www.mindswap.org/2004/owl/mindswappers#Vladimir_Kolovski> <http://www.w3.org/2000/01/rdf-schema#label> "Vladimir Kolovski" .
+<http://www.mindswap.org/2004/owl/mindswappers#Vladimir_Kolovski> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#GraduateStudent> .
+<http://anant.kaushiva.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jim.Hendler> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.cs.umd.edu/~hendler/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jim.Hendler> <http://xmlns.com/foaf/0.1/mbox> <mailto:hendler@cs.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jim.Hendler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jim.Hendler> <http://xmlns.com/foaf/0.1/name> "Jim Hendler" .
+<http://www.mindswap.org/2004/owl/mindswappers#Jim.Hendler> <http://www.w3.org/2000/01/rdf-schema#label> "Jim Hendler" .
+<http://www.mindswap.org/2004/owl/mindswappers#Jim.Hendler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Faculty> .
+<mailto:kolovski@cs.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:femke@umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://xmlns.com/foaf/0.1/depiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<mailto:chris@shenton.org> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:yvonne@mindswap.org> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.cs.umd.edu/~nada/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/2004/owl/mindswappers#Chris.Testa> <http://xmlns.com/foaf/0.1/mbox> <mailto:testac@umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Chris.Testa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Chris.Testa> <http://xmlns.com/foaf/0.1/name> "Chris Testa" .
+<http://www.mindswap.org/2004/owl/mindswappers#Chris.Testa> <http://www.w3.org/2000/01/rdf-schema#label> "Chris Testa" .
+<http://www.mindswap.org/2004/owl/mindswappers#Chris.Testa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#UndergraduateStudent> .
+<http://www.mindswap.org/2004/owl/mindswappers#Aditya.Kalyanpur> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.mindswap.org/~aditkal/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Aditya.Kalyanpur> <http://xmlns.com/foaf/0.1/mbox> <mailto:adityak@wam.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Aditya.Kalyanpur> <http://xmlns.com/foaf/0.1/mbox> <mailto:aditkal@yahoo.com> .
+<http://www.mindswap.org/2004/owl/mindswappers#Aditya.Kalyanpur> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.ece.umd.edu/~adityak/aditya_foaf.rdf> .
+<http://www.mindswap.org/2004/owl/mindswappers#Aditya.Kalyanpur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Aditya.Kalyanpur> <http://xmlns.com/foaf/0.1/name> "Aditya Kalyanpur" .
+<http://www.mindswap.org/2004/owl/mindswappers#Aditya.Kalyanpur> <http://www.w3.org/2000/01/rdf-schema#label> "Aditya Kalyanpur" .
+<http://www.mindswap.org/2004/owl/mindswappers#Aditya.Kalyanpur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#GraduateStudent> .
+<mailto:Bernardo.Cuenca@uv.es> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://eikeon.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/2004/owl/mindswappers#Christian.Halaschek> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.mindswap.org/~chris/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Christian.Halaschek> <http://xmlns.com/foaf/0.1/mbox> <mailto:halasche@cs.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Christian.Halaschek> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Christian.Halaschek> <http://xmlns.com/foaf/0.1/name> "Christian Halaschek-Wiener" .
+<http://www.mindswap.org/2004/owl/mindswappers#Christian.Halaschek> <http://www.w3.org/2000/01/rdf-schema#label> "Christian Halaschek" .
+<http://www.mindswap.org/2004/owl/mindswappers#Christian.Halaschek> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#GraduateStudent> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fec .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Debbie.Heisler> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fef .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Daniel.Krech> .
+<mailto:mmahmud@wam.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.mindswap.org/2003/owl/mindswap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.mindswap.org/2003/owl/mindswap#Programmer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mindswap.org/2004/owl/mindswappers#Dave.Wang> <http://xmlns.com/foaf/0.1/mbox> <mailto:tw7@cs.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Dave.Wang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Dave.Wang> <http://xmlns.com/foaf/0.1/name> "Taowei David Wang" .
+<http://www.mindswap.org/2004/owl/mindswappers#Dave.Wang> <http://www.w3.org/2000/01/rdf-schema#label> "Taowei David Wang" .
+<http://www.mindswap.org/2004/owl/mindswappers#Dave.Wang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#GraduateStudent> .
+<mailto:golbeck@cs.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.mindswap.org/2004/owl/mindswappers#Amy.Alford> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.mindswap.org/~aloomis/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Amy.Alford> <http://xmlns.com/foaf/0.1/mbox> <mailto:aloomis@glue.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Amy.Alford> <http://xmlns.com/foaf/0.1/homepage> <http://www.sarn.org/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Amy.Alford> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://sarn.org/foaf.rdf> .
+<http://www.mindswap.org/2004/owl/mindswappers#Amy.Alford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Amy.Alford> <http://xmlns.com/foaf/0.1/name> "Amy Alford" .
+<http://www.mindswap.org/2004/owl/mindswappers#Amy.Alford> <http://www.w3.org/2000/01/rdf-schema#label> "Amy Alford" .
+<http://www.mindswap.org/2004/owl/mindswappers#Amy.Alford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Programmer> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ffa .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Aditya.Kalyanpur> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff7 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Andrew.Schain> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fda <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fd9 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fda <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Ron.Alford> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fd6 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Ugur_Kuter> .
+<http://www.mindswap.org/~dwood/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ross.Baker> <http://xmlns.com/foaf/0.1/mbox> <mailto:roark@wam.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ross.Baker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ross.Baker> <http://xmlns.com/foaf/0.1/name> "Ross Baker" .
+<http://www.mindswap.org/2004/owl/mindswappers#Ross.Baker> <http://www.w3.org/2000/01/rdf-schema#label> "Ross Baker" .
+<http://www.mindswap.org/2004/owl/mindswappers#Ross.Baker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .
+<mailto:bzhao@cs.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.unc.edu/~bparsia/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe4 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Jennifer.Golbeck> .
+<mailto:adityak@wam.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:evren@cs.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:aditkal@yahoo.com> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:halasche@cs.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff2 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Chris.Testa> .
+<mailto:roark@wam.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.mindswap.org/~golbeck/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<mailto:bparsia@isr.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.terrorprofiles.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fdd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fdc .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fdd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Mike.Grove> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fdf .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Kendall.Clark> .
+<http://www.mindswap.org/2004/owl/mindswappers#Katy.Newton> <http://xmlns.com/foaf/0.1/mbox> <mailto:katyn@wam.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Katy.Newton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Katy.Newton> <http://xmlns.com/foaf/0.1/name> "Katy Newton" .
+<http://www.mindswap.org/2004/owl/mindswappers#Katy.Newton> <http://www.w3.org/2000/01/rdf-schema#label> "Katy Newton" .
+<http://www.mindswap.org/2004/owl/mindswappers#Katy.Newton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .
+<mailto:eikeon@eikeon.com> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:mhgrove@hotmail.com> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.mindswap.org/~katz/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/2003/owl/mindswap#Faculty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.mindswap.org/~evren/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<mailto:ronwalf@glue.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:femke@geog.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fea .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Evren.Sirin> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe7 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Hamid_Haidarian-Shahri> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mindswap.org/2004/owl/mindswappers#Matt.Westhoff> <http://xmlns.com/foaf/0.1/mbox> <mailto:matt2718@hotmail.com> .
+<http://www.mindswap.org/2004/owl/mindswappers#Matt.Westhoff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Matt.Westhoff> <http://xmlns.com/foaf/0.1/name> "Matt Westhoff" .
+<http://www.mindswap.org/2004/owl/mindswappers#Matt.Westhoff> <http://www.w3.org/2000/01/rdf-schema#label> "Matt Westoff" .
+<http://www.mindswap.org/2004/owl/mindswappers#Matt.Westhoff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .
+<http://www.mindswap.org/2004/owl/mindswappers#Kendall.Clark> <http://xmlns.com/foaf/0.1/mbox> <mailto:kendall@monkeyfist.com> .
+<http://www.mindswap.org/2004/owl/mindswappers#Kendall.Clark> <http://xmlns.com/foaf/0.1/homepage> <http://clark.dallas.tx.us/kendall/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Kendall.Clark> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://clark.dallas.tx.us/kendall/foaf.rdf> .
+<http://www.mindswap.org/2004/owl/mindswappers#Kendall.Clark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Kendall.Clark> <http://xmlns.com/foaf/0.1/name> "Kendall Grant Clark" .
+<http://www.mindswap.org/2004/owl/mindswappers#Kendall.Clark> <http://www.w3.org/2000/01/rdf-schema#label> "Kendall Clark" .
+<http://www.mindswap.org/2004/owl/mindswappers#Kendall.Clark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Programmer> .
+<mailto:kiyomitu@kobe-u.ac.jp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.mindswap.org/2003/owl/mindswap#Visitor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<mailto:hendler@cs.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:ronwalf@wam.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.mindswap.org/2004/owl/mindswappers#Daniel.Krech> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://eikeon.com/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Daniel.Krech> <http://xmlns.com/foaf/0.1/mbox> <mailto:eikeon@eikeon.com> .
+<http://www.mindswap.org/2004/owl/mindswappers#Daniel.Krech> <http://xmlns.com/foaf/0.1/homepage> <http://eikeon.com/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Daniel.Krech> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://eikeon.com/foaf.rdf> .
+<http://www.mindswap.org/2004/owl/mindswappers#Daniel.Krech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Daniel.Krech> <http://xmlns.com/foaf/0.1/name> "Daniel Krech" .
+<http://www.mindswap.org/2004/owl/mindswappers#Daniel.Krech> <http://www.w3.org/2000/01/rdf-schema#label> "Daniel Krech" .
+<http://www.mindswap.org/2004/owl/mindswappers#Daniel.Krech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Programmer> .
+<http://www.mindswap.org/2004/owl/mindswappers#Hamid_Haidarian-Shahri> <http://xmlns.com/foaf/0.1/mbox> <mailto:hamid@cs.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Hamid_Haidarian-Shahri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Hamid_Haidarian-Shahri> <http://xmlns.com/foaf/0.1/name> "Hamid Haidarian-Shahri" .
+<http://www.mindswap.org/2004/owl/mindswappers#Hamid_Haidarian-Shahri> <http://www.w3.org/2000/01/rdf-schema#label> "Hamid Haidarian-Shahri" .
+<http://www.mindswap.org/2004/owl/mindswappers#Hamid_Haidarian-Shahri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#GraduateStudent> .
+<http://www.mindswap.org/2003/owl/mindswap#Affiliate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mindswap.org/2004/owl/mindswappers> <http://www.w3.org/2002/07/owl#imports> <http://www.mindswap.org/2003/owl/mindswap> .
+<http://www.mindswap.org/2004/owl/mindswappers> <http://www.w3.org/2000/01/rdf-schema#label> "Mindswappers" .
+<http://www.mindswap.org/2004/owl/mindswappers> <http://www.w3.org/2000/01/rdf-schema#comment> "List of current and former Mindswappers" .
+<http://www.mindswap.org/2004/owl/mindswappers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff5 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Bijan.Parsia> .
+<mailto:matt2718@hotmail.com> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fd5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fd5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Yvonne.Shashoua> .
+<http://www.mindswap.org/2004/owl/mindswappers#Hidenari.Kiyomitsu> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.db.cla.kobe-u.ac.jp/~kiyomitu/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Hidenari.Kiyomitsu> <http://xmlns.com/foaf/0.1/mbox> <mailto:kiyomitu@kobe-u.ac.jp> .
+<http://www.mindswap.org/2004/owl/mindswappers#Hidenari.Kiyomitsu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Hidenari.Kiyomitsu> <http://xmlns.com/foaf/0.1/name> "Hidenari Kiyomitsu" .
+<http://www.mindswap.org/2004/owl/mindswappers#Hidenari.Kiyomitsu> <http://www.w3.org/2000/01/rdf-schema#label> "Hidenari Kiyomitsu" .
+<http://www.mindswap.org/2004/owl/mindswappers#Hidenari.Kiyomitsu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .
+<mailto:dbanerje@umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mindswap.org/2004/owl/mindswappers#Bernardo.Cuenca> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.mindswap.org/~bernardo/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Bernardo.Cuenca> <http://xmlns.com/foaf/0.1/mbox> <mailto:bernardo@mindswap.org> .
+<http://www.mindswap.org/2004/owl/mindswappers#Bernardo.Cuenca> <http://xmlns.com/foaf/0.1/mbox> <mailto:bernardo@mindlab.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Bernardo.Cuenca> <http://xmlns.com/foaf/0.1/mbox> <mailto:Bernardo.Cuenca@uv.es> .
+<http://www.mindswap.org/2004/owl/mindswappers#Bernardo.Cuenca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Bernardo.Cuenca> <http://xmlns.com/foaf/0.1/name> "Bernardo Cuenca" .
+<http://www.mindswap.org/2004/owl/mindswappers#Bernardo.Cuenca> <http://www.w3.org/2000/01/rdf-schema#label> "Bernardo Cuenca" .
+<http://www.mindswap.org/2004/owl/mindswappers#Bernardo.Cuenca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .
+<http://www.mindswap.org/2003/owl/mindswap#Alumni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jordan.Katz> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.mindswap.org/~katz/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jordan.Katz> <http://xmlns.com/foaf/0.1/mbox> <mailto:katz@underlevel.net> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jordan.Katz> <http://xmlns.com/foaf/0.1/homepage> <http://underlevel.net/jordan/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jordan.Katz> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.mindswap.org/~katz/foaf.rdf> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jordan.Katz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jordan.Katz> <http://xmlns.com/foaf/0.1/name> "Jordan Katz" .
+<http://www.mindswap.org/2004/owl/mindswappers#Jordan.Katz> <http://www.w3.org/2000/01/rdf-schema#label> "Jordan Katz" .
+<http://www.mindswap.org/2004/owl/mindswappers#Jordan.Katz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#UndergraduateStudent> .
+<http://www.mindswap.org/2004/owl/mindswappers#Naiwen.Lin> <http://xmlns.com/foaf/0.1/mbox> <mailto:nwlin@cs.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Naiwen.Lin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Naiwen.Lin> <http://xmlns.com/foaf/0.1/name> "Naiwen Lin" .
+<http://www.mindswap.org/2004/owl/mindswappers#Naiwen.Lin> <http://www.w3.org/2000/01/rdf-schema#label> "Naiwen Lin" .
+<http://www.mindswap.org/2004/owl/mindswappers#Naiwen.Lin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#GraduateStudent> .
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.mindswap.org/2004/owl/mindswappers#Grecia.Lapizco-Encinas> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.mindswap.org/~glapizco/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Grecia.Lapizco-Encinas> <http://xmlns.com/foaf/0.1/mbox> <mailto:glapizco@umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Grecia.Lapizco-Encinas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Grecia.Lapizco-Encinas> <http://xmlns.com/foaf/0.1/name> "Grecia C. Lapizco-Encinas" .
+<http://www.mindswap.org/2004/owl/mindswappers#Grecia.Lapizco-Encinas> <http://www.w3.org/2000/01/rdf-schema#label> "Grecia C. Lapizco-Encinas" .
+<http://www.mindswap.org/2004/owl/mindswappers#Grecia.Lapizco-Encinas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jay.Banerjee> <http://xmlns.com/foaf/0.1/mbox> <mailto:dbanerje@umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jay.Banerjee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Jay.Banerjee> <http://xmlns.com/foaf/0.1/name> "Jay Banerjee" .
+<http://www.mindswap.org/2004/owl/mindswappers#Jay.Banerjee> <http://www.w3.org/2000/01/rdf-schema#label> "Jay Banerjee" .
+<http://www.mindswap.org/2004/owl/mindswappers#Jay.Banerjee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .
+<http://www.mindswap.org/2004/owl/mindswappers#Mike.Grove> <http://xmlns.com/foaf/0.1/mbox> <mailto:mhgrove@hotmail.com> .
+<http://www.mindswap.org/2004/owl/mindswappers#Mike.Grove> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Mike.Grove> <http://xmlns.com/foaf/0.1/name> "Mike Grove" .
+<http://www.mindswap.org/2004/owl/mindswappers#Mike.Grove> <http://www.w3.org/2000/01/rdf-schema#label> "Mike Grove" .
+<http://www.mindswap.org/2004/owl/mindswappers#Mike.Grove> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Programmer> .
+<http://www.mindswap.org/2004/owl/mindswappers#Nada.Hashmi> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.mindswap.org/~nada/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Nada.Hashmi> <http://xmlns.com/foaf/0.1/mbox> <mailto:nada@cs.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Nada.Hashmi> <http://xmlns.com/foaf/0.1/homepage> <http://www.cs.umd.edu/~nada/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Nada.Hashmi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Nada.Hashmi> <http://xmlns.com/foaf/0.1/name> "Nada Hashmi" .
+<http://www.mindswap.org/2004/owl/mindswappers#Nada.Hashmi> <http://www.w3.org/2000/01/rdf-schema#label> "Nada Hashmi" .
+<http://www.mindswap.org/2004/owl/mindswappers#Nada.Hashmi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ugur_Kuter> <http://xmlns.com/foaf/0.1/mbox> <mailto:ukuter@cs.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ugur_Kuter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ugur_Kuter> <http://xmlns.com/foaf/0.1/name> "Ugur Kuter" .
+<http://www.mindswap.org/2004/owl/mindswappers#Ugur_Kuter> <http://www.w3.org/2000/01/rdf-schema#label> "Ugur Kuter" .
+<http://www.mindswap.org/2004/owl/mindswappers#Ugur_Kuter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Researcher> .
+<mailto:ruckhaus@ldc.usb.ve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe2 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Jordan.Katz> .
+<http://www.mindswap.org/2004/owl/mindswappers#Andrew.Schain> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.hq.nasa.gov/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Andrew.Schain> <http://xmlns.com/foaf/0.1/mbox> <mailto:andrew@schain.org> .
+<http://www.mindswap.org/2004/owl/mindswappers#Andrew.Schain> <http://xmlns.com/foaf/0.1/homepage> <http://www.schain.org/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Andrew.Schain> <http://xmlns.com/foaf/0.1/depiction> <http://www.mindswap.org/2004/images/2004-09/schain_professional> .
+<http://www.mindswap.org/2004/owl/mindswappers#Andrew.Schain> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.mindswap.org/~schain/foaf.rdf> .
+<http://www.mindswap.org/2004/owl/mindswappers#Andrew.Schain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Andrew.Schain> <http://xmlns.com/foaf/0.1/name> "Andrew Schain" .
+<http://www.mindswap.org/2004/owl/mindswappers#Andrew.Schain> <http://www.w3.org/2000/01/rdf-schema#label> "Andrew Schain" .
+<http://www.mindswap.org/2004/owl/mindswappers#Andrew.Schain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Visitor> .
+<http://www.mindswap.org/2004/owl/mindswappers#Bin.Zhao> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.mindswap.org/~bzhao/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Bin.Zhao> <http://xmlns.com/foaf/0.1/mbox> <mailto:bzhao@cs.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Bin.Zhao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Bin.Zhao> <http://xmlns.com/foaf/0.1/name> "Bin Zhao" .
+<http://www.mindswap.org/2004/owl/mindswappers#Bin.Zhao> <http://www.w3.org/2000/01/rdf-schema#label> "Bin Zhao" .
+<http://www.mindswap.org/2004/owl/mindswappers#Bin.Zhao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#GraduateStudent> .
+<http://www.mindswap.org/2004/owl/mindswappers#Yvonne.Shashoua> <http://xmlns.com/foaf/0.1/mbox> <mailto:yvonne@mindswap.org> .
+<http://www.mindswap.org/2004/owl/mindswappers#Yvonne.Shashoua> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Yvonne.Shashoua> <http://xmlns.com/foaf/0.1/name> "Yvonne Shashoua" .
+<http://www.mindswap.org/2004/owl/mindswappers#Yvonne.Shashoua> <http://www.w3.org/2000/01/rdf-schema#label> "Yvonne Sashoua" .
+<http://www.mindswap.org/2004/owl/mindswappers#Yvonne.Shashoua> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .
+<http://www.mindswap.org/2004/owl/mindswappers#David_Wood> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.mindswap.org/~dwood/> .
+<http://www.mindswap.org/2004/owl/mindswappers#David_Wood> <http://xmlns.com/foaf/0.1/mbox> <mailto:dwood@mindswap.org> .
+<http://www.mindswap.org/2004/owl/mindswappers#David_Wood> <http://xmlns.com/foaf/0.1/homepage> <http://www.mindswap.org/~dwood/> .
+<http://www.mindswap.org/2004/owl/mindswappers#David_Wood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#David_Wood> <http://xmlns.com/foaf/0.1/name> "David Wood" .
+<http://www.mindswap.org/2004/owl/mindswappers#David_Wood> <http://www.w3.org/2000/01/rdf-schema#label> "David Wood" .
+<http://www.mindswap.org/2004/owl/mindswappers#David_Wood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Researcher> .
+<mailto:ukuter@cs.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<mailto:dwood@mindswap.org> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fed .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#David_Wood> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff0 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Daniel.Hewlett> .
+<mailto:awmannes@comcast.net> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://volus.net/~ronwalf/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<mailto:bernardo@mindswap.org> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.sarn.org/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/~anant/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Reck> <http://xmlns.com/foaf/0.1/mbox> <mailto:rreck@iama.rrecktek.com> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Reck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Reck> <http://xmlns.com/foaf/0.1/name> "Ronald P. Reck" .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Reck> <http://www.w3.org/2000/01/rdf-schema#label> "Ron Reck" .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Reck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ffc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ffb .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ffc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Aaron.Mannes> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fdb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fda .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fdb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Naiwen.Lin> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff8 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Anant.Kaushiva> .
+<mailto:hamid@cs.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fd8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fd7 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fd8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Ross.Baker> .
+<http://www.mindswap.org/2004/owl/mindswappers#Anant.Kaushiva> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.mindswap.org/~anant/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Anant.Kaushiva> <http://xmlns.com/foaf/0.1/mbox> <mailto:anant@mindswap.org> .
+<http://www.mindswap.org/2004/owl/mindswappers#Anant.Kaushiva> <http://xmlns.com/foaf/0.1/homepage> <http://anant.kaushiva.com/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Anant.Kaushiva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Anant.Kaushiva> <http://xmlns.com/foaf/0.1/name> "Anant Kaushiva" .
+<http://www.mindswap.org/2004/owl/mindswappers#Anant.Kaushiva> <http://www.w3.org/2000/01/rdf-schema#label> "Anant Kaushiva" .
+<http://www.mindswap.org/2004/owl/mindswappers#Anant.Kaushiva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .
+<mailto:andrew@schain.org> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:anant@mindswap.org> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.mindswap.org/2004/owl/mindswappers#Bijan.Parsia> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.mindswap.org/~bparsia/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Bijan.Parsia> <http://xmlns.com/foaf/0.1/mbox> <mailto:bparsia@isr.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Bijan.Parsia> <http://xmlns.com/foaf/0.1/homepage> <http://www.unc.edu/~bparsia/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Bijan.Parsia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Bijan.Parsia> <http://xmlns.com/foaf/0.1/name> "Bijan Parsia" .
+<http://www.mindswap.org/2004/owl/mindswappers#Bijan.Parsia> <http://www.w3.org/2000/01/rdf-schema#label> "Bijan Parsia" .
+<http://www.mindswap.org/2004/owl/mindswappers#Bijan.Parsia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Researcher> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe5 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Jay.Banerjee> .
+<http://www.db.cla.kobe-u.ac.jp/~kiyomitu/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/~bernardo/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/2003/owl/mindswap#UndergraduateStudent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff3 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Chris.Shenton> .
+<http://www.mindswap.org/~bparsia/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/~aloomis/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/~bzhao/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/~glapizco/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fde <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fdd .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fde <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Meem.Mahmud> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe0 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Katy.Newton> .
+<http://www.mindswap.org/2004/owl/mindswappers#Meem.Mahmud> <http://xmlns.com/foaf/0.1/mbox> <mailto:mmahmud@wam.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Meem.Mahmud> <http://xmlns.com/foaf/0.1/mbox> <mailto:mmahmud@umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Meem.Mahmud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Meem.Mahmud> <http://xmlns.com/foaf/0.1/name> "Meem Mahmud" .
+<http://www.mindswap.org/2004/owl/mindswappers#Meem.Mahmud> <http://www.w3.org/2000/01/rdf-schema#label> "Meem Mahmud" .
+<http://www.mindswap.org/2004/owl/mindswappers#Meem.Mahmud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .
+<http://www.mindswap.org/~chris/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<mailto:ronwalf@umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.cs.umd.edu/~golbeck/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<mailto:katz@underlevel.net> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://clark.dallas.tx.us/kendall/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.hq.nasa.gov/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7feb .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Edna.Ruckhaus> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe8 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Grecia.Lapizco-Encinas> .
+<mailto:Chris.Shenton@hq.nasa.gov> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:nada@cs.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.cs.umd.edu/~hendler/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/2004/images/2004-09/schain_professional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Image> .
+<mailto:testac@umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.schain.org/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff9 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Amy.Alford> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff6 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Bernardo.Cuenca> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fd6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fd5 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fd6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Vladimir_Kolovski> .
+<http://www.mindswap.org/~nada/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Alford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Programmer> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Alford> <http://xmlns.com/foaf/0.1/mbox> <mailto:ronwalf@volus.net> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Alford> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.mindswap.org/~ronwalf/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Alford> <http://xmlns.com/foaf/0.1/name> "Ron Alford" .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Alford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Alford> <http://xmlns.com/foaf/0.1/mbox> <mailto:ronwalf@glue.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Alford> <http://xmlns.com/foaf/0.1/mbox> <mailto:ronwalf@wam.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Alford> <http://xmlns.com/foaf/0.1/mbox> <mailto:ronwalf@umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Alford> <http://www.w3.org/2000/01/rdf-schema#label> "Ron Alford" .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Alford> <http://xmlns.com/foaf/0.1/homepage> <http://volus.net/~ronwalf/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Ron.Alford> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://volus.net/~ronwalf/foaf.rdf> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<mailto:ronwalf@volus.net> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe3 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Jim.Hendler> .
+<mailto:rreck@iama.rrecktek.com> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:nwlin@cs.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:aloomis@glue.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:tw7@cs.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.mindswap.org/2004/owl/mindswappers#Evren.Sirin> <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.mindswap.org/~evren/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Evren.Sirin> <http://xmlns.com/foaf/0.1/mbox> <mailto:evren@cs.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Evren.Sirin> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.mindswap.org/~evren/foaf.rdf> .
+<http://www.mindswap.org/2004/owl/mindswappers#Evren.Sirin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Evren.Sirin> <http://xmlns.com/foaf/0.1/name> "Evren Sirin" .
+<http://www.mindswap.org/2004/owl/mindswappers#Evren.Sirin> <http://www.w3.org/2000/01/rdf-schema#label> "Evren Sirin" .
+<http://www.mindswap.org/2004/owl/mindswappers#Evren.Sirin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#GraduateStudent> .
+<http://www.mindswap.org/2004/owl/mindswappers#Chris.Shenton> <http://xmlns.com/foaf/0.1/mbox> <mailto:chris@shenton.org> .
+<http://www.mindswap.org/2004/owl/mindswappers#Chris.Shenton> <http://xmlns.com/foaf/0.1/mbox> <mailto:Chris.Shenton@hq.nasa.gov> .
+<http://www.mindswap.org/2004/owl/mindswappers#Chris.Shenton> <http://xmlns.com/foaf/0.1/homepage> <http://chris.shenton.org/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Chris.Shenton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Chris.Shenton> <http://xmlns.com/foaf/0.1/name> "Chris Shenton" .
+<http://www.mindswap.org/2004/owl/mindswappers#Chris.Shenton> <http://www.w3.org/2000/01/rdf-schema#label> "Chris Shenton" .
+<http://www.mindswap.org/2004/owl/mindswappers#Chris.Shenton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Visitor> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fef <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fee .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fef <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Dave.Wang> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff1 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Christian.Halaschek> .
+<http://www.mindswap.org/2004/owl/mindswappers#Edna.Ruckhaus> <http://xmlns.com/foaf/0.1/mbox> <mailto:ruckhaus@ldc.usb.ve> .
+<http://www.mindswap.org/2004/owl/mindswappers#Edna.Ruckhaus> <http://xmlns.com/foaf/0.1/homepage> <http://www.ldc.usb.ve/~ruckhaus/> .
+<http://www.mindswap.org/2004/owl/mindswappers#Edna.Ruckhaus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Edna.Ruckhaus> <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+<http://www.mindswap.org/2004/owl/mindswappers#Edna.Ruckhaus> <http://www.w3.org/2000/01/rdf-schema#label> "Edna Ruckhaus" .
+<http://www.mindswap.org/2004/owl/mindswappers#Edna.Ruckhaus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .
+<http://www.mindswap.org/2004/owl/mindswappers#Daniel.Hewlett> <http://xmlns.com/foaf/0.1/mbox> <mailto:dhewlett@umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Daniel.Hewlett> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Daniel.Hewlett> <http://xmlns.com/foaf/0.1/name> "Daniel Hewlett" .
+<http://www.mindswap.org/2004/owl/mindswappers#Daniel.Hewlett> <http://www.w3.org/2000/01/rdf-schema#label> "Daniel Hewlett" .
+<http://www.mindswap.org/2004/owl/mindswappers#Daniel.Hewlett> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .
+<mailto:katyn@wam.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://underlevel.net/jordan/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/~aditkal/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<http://www.mindswap.org/2003/owl/mindswap#Researcher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ffd <http://www.w3.org/2002/07/owl#distinctMembers> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ffc .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ffd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fdc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fdb .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fdc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Nada.Hashmi> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fd9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fd8 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fd9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Ron.Reck> .
+<mailto:dhewlett@umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:kendall@monkeyfist.com> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe9 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Femke.Reitsma> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe6 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7fe7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Hidenari.Kiyomitsu> .
+<mailto:glapizco@umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:mmahmud@umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.mindswap.org/2004/owl/mindswappers#Femke.Reitsma> <http://xmlns.com/foaf/0.1/mbox> <mailto:femke@umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Femke.Reitsma> <http://xmlns.com/foaf/0.1/mbox> <mailto:femke@geog.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Femke.Reitsma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Femke.Reitsma> <http://xmlns.com/foaf/0.1/name> "Femke Reitsma" .
+<http://www.mindswap.org/2004/owl/mindswappers#Femke.Reitsma> <http://www.w3.org/2000/01/rdf-schema#label> "Femke Reitsma" .
+<http://www.mindswap.org/2004/owl/mindswappers#Femke.Reitsma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .
+<http://www.mindswap.org/2003/owl/mindswap#GraduateStudent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://chris.shenton.org/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<mailto:heisler@cs.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:bernardo@mindlab.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<mailto:hiramatu@umiacs.umd.edu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff4 .
+_:AX2dX2c190afeX3aX124917c6312X3aXX2dX7ff5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.mindswap.org/2004/owl/mindswappers#Bin.Zhao> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.mindswap.org/2004/owl/mindswappers#Kaoru.Hiramatsu> <http://xmlns.com/foaf/0.1/mbox> <mailto:hiramatu@umiacs.umd.edu> .
+<http://www.mindswap.org/2004/owl/mindswappers#Kaoru.Hiramatsu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mindswap.org/2004/owl/mindswappers#Kaoru.Hiramatsu> <http://xmlns.com/foaf/0.1/name> "Kaoru Hiramatsu" .
+<http://www.mindswap.org/2004/owl/mindswappers#Kaoru.Hiramatsu> <http://www.w3.org/2000/01/rdf-schema#label> "Kaoru Hiramatsu" .
+<http://www.mindswap.org/2004/owl/mindswappers#Kaoru.Hiramatsu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mindswap.org/2003/owl/mindswap#Alumni> .

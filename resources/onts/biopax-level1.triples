@@ -1,0 +1,633 @@
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#CONTROLLER> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff6 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#DB-VERSION> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd5 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fb3 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ACTIVATION-UNKMECH"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#DB> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#DB> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#xref> .
+<http://www.biopax.org/release/biopax-level1.owl#DB> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the external database to which this xref refers."@en .
+<http://www.biopax.org/release/biopax-level1.owl#DB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntity> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#pathway> .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntity> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#interaction> .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#entity> .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity that has a physical structure. This class serves as the super-class for all physical entities, although its current set of subclasses is limited to molecules. Physical entities are frequent building blocks of interactions. As a highly abstract class in the ontology, instances of the physicalEntity class should be created rarely, if ever.\n\nCLASS-DESIGN-RATIONALE: It's difficult to find a name that encompasses all of the subclasses of this class without being too general. E.g. PSI-MI uses interactor, BIND uses object, BioCyc uses chemicals.  physicalEntity seems to be a good specialization of entity.\n\nCLASS-NAME-SYNONYMS: part, interactor, object"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#CELLTYPE> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> .
+<http://www.biopax.org/release/biopax-level1.owl#CELLTYPE> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#bioSource> .
+<http://www.biopax.org/release/biopax-level1.owl#CELLTYPE> <http://www.w3.org/2000/01/rdf-schema#comment> "A cell type, e.g. 'HeLa'. This should reference a term in a controlled vocabulary of cell types."@en .
+<http://www.biopax.org/release/biopax-level1.owl#CELLTYPE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#SEQUENCE> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe3 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fbf <http://www.w3.org/2002/07/owl#unionOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fbe .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fbf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc2 <http://www.w3.org/2002/07/owl#unionOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fc1 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa1 <http://www.w3.org/2002/07/owl#oneOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fa0 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataRange> .
+<http://www.biopax.org/release/biopax-level1.owl#unificationXref> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#relationshipXref> .
+<http://www.biopax.org/release/biopax-level1.owl#unificationXref> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#publicationXref> .
+<http://www.biopax.org/release/biopax-level1.owl#unificationXref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fd7 .
+<http://www.biopax.org/release/biopax-level1.owl#unificationXref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fd8 .
+<http://www.biopax.org/release/biopax-level1.owl#unificationXref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#xref> .
+<http://www.biopax.org/release/biopax-level1.owl#unificationXref> <http://www.w3.org/2000/01/rdf-schema#comment> "A unification defines a reference to an entity in an external resource that has the same biological identity as the referring entity. For example, if one wished to link from a database record, C, describing a chemical compound in a BioPAX data collection to a record, C', describing the same chemical compound in an external database, one would use a unification xref since records C and C' describe the same biological identity. Generally, unification xrefs should be used whenever possible, although there are cases where they might not be useful, such as application to application data exchange.\n\nNOTE: Unification xrefs in physical entities are essential for data integration, but are less important in interactions. This is because unification xrefs on the physical entities in an interaction can be used to compute the equivalence of two interactions of the same type.\n\nNOTE: An xref in a protein pointing to a gene, e.g. in the LocusLink database, would not be a unification xref since the two entities do not have the same biological identity (one is a protein, the other is a gene).  Instead, this link should be a captured as a relationship xref."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#unificationXref> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#DELTA-S> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.biopax.org/release/biopax-level1.owl#DELTA-S> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction> .
+<http://www.biopax.org/release/biopax-level1.owl#DELTA-S> <http://www.w3.org/2000/01/rdf-schema#comment> "For biochemical reactions, this slot refers to the standard transformed entropy change for a reaction written in terms of biochemical reactants (sums of species), delta-S'<sup>o</sup>.\n\n  delta-G'<sup>o</sup> = delta-H'<sup>o</sup> - T delta-S'<sup>o</sup>\n\n(This definition from EcoCyc)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#DELTA-S> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fee <http://www.w3.org/2002/07/owl#someValuesFrom> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fed .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fee <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#SPONTANEOUS> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff1 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fcd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fcc .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fcd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#entity> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fcf .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#dataSource> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fac <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fab .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fac <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INHIBITION-UNKMECH"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fa8 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "IRREVERSIBLE-LEFT-TO-RIGHT"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#COMMENT> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#COMMENT> <http://www.w3.org/2000/01/rdf-schema#domain> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fce .
+<http://www.biopax.org/release/biopax-level1.owl#COMMENT> <http://www.w3.org/2000/01/rdf-schema#comment> "Comment on the data in the container class."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#COMMENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#CONTROLLER> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS> .
+<http://www.biopax.org/release/biopax-level1.owl#CONTROLLER> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#CONTROLLER> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#control> .
+<http://www.biopax.org/release/biopax-level1.owl#CONTROLLER> <http://www.w3.org/2000/01/rdf-schema#comment> "The controlling entity, e.g., in a biochemical reaction, an enzyme is the controlling entity of the reaction."@en .
+<http://www.biopax.org/release/biopax-level1.owl#CONTROLLER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ffc <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#NAME> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ffc <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ffc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#CONTROLLED> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.biopax.org/release/biopax-level1.owl#conversion> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fdb <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#ORGANISM> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fdb <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fdb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#DB> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd8 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fba <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fb9 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fba <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#pathway> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb7 <http://www.w3.org/2002/07/owl#oneOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fb6 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataRange> .
+<http://www.biopax.org/release/biopax-level1.owl#transport> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#complexAssembly> .
+<http://www.biopax.org/release/biopax-level1.owl#transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#conversion> .
+<http://www.biopax.org/release/biopax-level1.owl#transport> <http://www.w3.org/2000/01/rdf-schema#comment> "A conversion interaction in which an entity (or set of entities) changes location within or with respect to the cell. A transport interaction does not include the transporter entity, even if one is required in order for the transport to occur.  Instead, transporters are linked to transport interactions via the catalysis class.  A synonym for the transport class is 'translocation'.  One example of this class is the movement of Na+ into the cell through an open voltage-gated channel.\n\nNOTE: Transport interactions do not involve chemical changes of the participant(s). These cases are handled by the transportWithBiochemicalReaction class."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#ORGANISM> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#bioSource> .
+<http://www.biopax.org/release/biopax-level1.owl#ORGANISM> <http://www.w3.org/2000/01/rdf-schema#domain> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fbc .
+<http://www.biopax.org/release/biopax-level1.owl#ORGANISM> <http://www.w3.org/2000/01/rdf-schema#comment> "An organism, e.g. 'Homo sapiens'."@en .
+<http://www.biopax.org/release/biopax-level1.owl#ORGANISM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.biopax.org/release/biopax-level1.owl#COMPONENTS> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#COMPONENTS> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#complex> .
+<http://www.biopax.org/release/biopax-level1.owl#COMPONENTS> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the physicalEntity subunits of this complex."@en .
+<http://www.biopax.org/release/biopax-level1.owl#COMPONENTS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#PHYSICAL-ENTITY> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe6 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc5 <http://www.w3.org/2002/07/owl#unionOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fc4 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa4 <http://www.w3.org/2002/07/owl#oneOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fa3 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataRange> .
+<http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.biopax.org/release/biopax-level1.owl#bioSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#pathwayStep> .
+<http://www.biopax.org/release/biopax-level1.owl#bioSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#dataSource> .
+<http://www.biopax.org/release/biopax-level1.owl#bioSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7ffb .
+<http://www.biopax.org/release/biopax-level1.owl#bioSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#bioSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#utilityClass> .
+<http://www.biopax.org/release/biopax-level1.owl#bioSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> .
+<http://www.biopax.org/release/biopax-level1.owl#bioSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7ffd .
+<http://www.biopax.org/release/biopax-level1.owl#bioSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#bioSource> <http://www.w3.org/2000/01/rdf-schema#comment> "A utility class that defines the biological source of a protein or RNA.  Other entities are either considered source-neutral (e.g. small molecules) or their biological source can be deduced from their constituents.  Examples include human, mouse liver tissue, and HeLa cells.  The optional NAME slot should be the full 'Genus species' name of the organism, with the genus capitalized and not abbreviated and the species not capitalized and not abbreviated."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#bioSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7ffa .
+<http://www.biopax.org/release/biopax-level1.owl#bioSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#xref> .
+<http://www.biopax.org/release/biopax-level1.owl#bioSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7ffc .
+<http://www.biopax.org/release/biopax-level1.owl#bioSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> .
+<http://www.biopax.org/release/biopax-level1.owl#pathway> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#physicalEntity> .
+<http://www.biopax.org/release/biopax-level1.owl#pathway> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#interaction> .
+<http://www.biopax.org/release/biopax-level1.owl#pathway> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fe8 .
+<http://www.biopax.org/release/biopax-level1.owl#pathway> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#entity> .
+<http://www.biopax.org/release/biopax-level1.owl#pathway> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity that consists of a set of interactions.  A pathway is a series of molecular interactions and reactions, often forming a network, that biologists have found useful to group together for organizational, historic, biophysical or other reasons. A synonym for this class is 'network'.\n\nNOTE: It is possible to define a pathway without specifying the interactions within the pathway. In this case, the pathway instance could consist simply of a name and could be treated as a black box."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#pathway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fe5 .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fe6 .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#pathwayStep> .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#dataSource> .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#xref> .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#utilityClass> .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#bioSource> .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fe4 .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> .
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> <http://www.w3.org/2000/01/rdf-schema#comment> "A utility class that describes any additional special characteristics of a physical entity required in order for it to participate in an interaction.  In the current ontology, these include stoichiometric coefficient and cellular location.  For example, in the interaction describing the transport of L-arginine into the cytoplasm in E. coli, the LEFT slot in the interaction would be filled with an instance of physicalEntityParticipant that specified the location of L-arginine as periplasm and the stoichiometric coefficient as one."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#PATHWAY-COMPONENTS> <http://www.w3.org/2000/01/rdf-schema#range> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fc8 .
+<http://www.biopax.org/release/biopax-level1.owl#PATHWAY-COMPONENTS> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#pathway> .
+<http://www.biopax.org/release/biopax-level1.owl#PATHWAY-COMPONENTS> <http://www.w3.org/2000/01/rdf-schema#comment> "A list of interactions and/or steps in this pathway/network.\n\nNote: Temporal ordering relationships among the interactions within a pathway are described using the pathwayStep instances. Each instance of the pathwayStep class defines the interactions that take place at a pathway step and an ordering relationship between pathway steps by pointing to the next pathwayStep in the pathway. This notion of ordering is not further formalized in the current BioPAX level to support other of types of ordering, like spatial ordering, or any detailed aspects of temporal ordering, like delay between events."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#PATHWAY-COMPONENTS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.biopax.org/release/biopax-level1.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "This is version 1.4 of the BioPAX Level 1 ontology.  The goal of the BioPAX group is to develop a common exchange format for biological pathway data.  More information is available at http://www.biopax.org.  This ontology is freely available under the LGPL (http://www.gnu.org/copyleft/lesser.html)."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#STRUCTURE-FORMAT> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff4 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#DB> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd3 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7faf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fae .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7faf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INHIBITION-NONCOMPETITIVE"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fb1 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INHIBITION-ALLOSTERIC"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#XREF> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#xref> .
+<http://www.biopax.org/release/biopax-level1.owl#XREF> <http://www.w3.org/2000/01/rdf-schema#domain> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fbf .
+<http://www.biopax.org/release/biopax-level1.owl#XREF> <http://www.w3.org/2000/01/rdf-schema#comment> "Values of this slot define external cross-references from this entity to entities in external databases."@en .
+<http://www.biopax.org/release/biopax-level1.owl#XREF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#TISSUE> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> .
+<http://www.biopax.org/release/biopax-level1.owl#TISSUE> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#bioSource> .
+<http://www.biopax.org/release/biopax-level1.owl#TISSUE> <http://www.w3.org/2000/01/rdf-schema#comment> "An external controlled vocabulary of tissue types."@en .
+<http://www.biopax.org/release/biopax-level1.owl#TISSUE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#catalysis> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#modulation> .
+<http://www.biopax.org/release/biopax-level1.owl#catalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7ff6 .
+<http://www.biopax.org/release/biopax-level1.owl#catalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7ff7 .
+<http://www.biopax.org/release/biopax-level1.owl#catalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7ff8 .
+<http://www.biopax.org/release/biopax-level1.owl#catalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7ff9 .
+<http://www.biopax.org/release/biopax-level1.owl#catalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#control> .
+<http://www.biopax.org/release/biopax-level1.owl#catalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "A control interaction in which a physical entity (a catalyst) increases the rate of a conversion interaction by lowering its activation energy. Instances of this class describe a pairing between a catalyzing entity and a catalyzed conversion. A separate catalysis instance should be created for each different conversion that a physical entity may catalyze and for each different physical entity that may catalyze a conversion. For example, a bifunctional enzyme that catalyzes two different biochemical reactions would be linked to each of those biochemical reactions by two separate instances of the catalysis class. \nTypically, each step in a metabolic pathway is either an instance of the catalysis class or a spontaneous conversion, which occurs under biological conditions without the aid of a catalyzing entity. Synonyms for this class include 'facilitation' and 'acceleration'. Examples of this class include the catalysis of a biochemical reaction by an enzyme, the enabling of a transport interaction by a membrane pore complex, and the facilitation of a complex assembly by a scaffold protein."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#catalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#LEFT> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS> .
+<http://www.biopax.org/release/biopax-level1.owl#LEFT> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#LEFT> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#conversion> .
+<http://www.biopax.org/release/biopax-level1.owl#LEFT> <http://www.w3.org/2000/01/rdf-schema#comment> "The participants on the left side of the conversion interaction. Since conversion interactions may proceed in either the left-to-right or right-to-left direction, occupants of the LEFT slot may be either reactants or products."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#LEFT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fde <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#ID> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fde <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fde <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#YEAR> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe1 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fbd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fbd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#control> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#conversion> .
+<http://www.biopax.org/release/biopax-level1.owl#control> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7ff3 .
+<http://www.biopax.org/release/biopax-level1.owl#control> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#interaction> .
+<http://www.biopax.org/release/biopax-level1.owl#control> <http://www.w3.org/2000/01/rdf-schema#comment> "An interaction in which one entity regulates, modifies, or otherwise influences another. Two types of control interactions are defined: activation and inhibition. Since this class is a superclass for specific types of control, instances of the control class should only be generated when none of its subclasses are applicable. One example of an instance of this class would be a small molecule that inhibits a pathway by an unknown mechanism.\n\nCLASS-NAME-SYNONYMS: regulation, mediation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#control> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#ID-VERSION> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#ID-VERSION> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#xref> .
+<http://www.biopax.org/release/biopax-level1.owl#ID-VERSION> <http://www.w3.org/2000/01/rdf-schema#comment> "The version number of the identifier (ID). E.g. The RefSeq accession number NM_005228.3 should be split into NM_005228 as the ID and 3 as the ID-VERSION."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#ID-VERSION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#publicationXref> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#unificationXref> .
+<http://www.biopax.org/release/biopax-level1.owl#publicationXref> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#relationshipXref> .
+<http://www.biopax.org/release/biopax-level1.owl#publicationXref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fe0 .
+<http://www.biopax.org/release/biopax-level1.owl#publicationXref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fe1 .
+<http://www.biopax.org/release/biopax-level1.owl#publicationXref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#xref> .
+<http://www.biopax.org/release/biopax-level1.owl#publicationXref> <http://www.w3.org/2000/01/rdf-schema#comment> "An xref that defines a reference to a publication such as a book, journal article, web page, or software manual. The reference may or may not be in a database, although references to PubMed are preferred when possible. The publication should make a direct reference to the instance it is attached to."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#publicationXref> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7feb .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#entity> .
+<http://www.biopax.org/release/biopax-level1.owl#SPONTANEOUS> <http://www.w3.org/2000/01/rdf-schema#range> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fa4 .
+<http://www.biopax.org/release/biopax-level1.owl#SPONTANEOUS> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#conversion> .
+<http://www.biopax.org/release/biopax-level1.owl#SPONTANEOUS> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies whether a reaction occurs spontaneously (i.e. uncatalyzed, under biological conditions) left-to-right, right-to-left, or not at all. An absence of a value for this slot implies that the reaction is not spontaneous, so the possible values need only distinguish between the two possible directions."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#SPONTANEOUS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#CONTROLLER> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe9 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fcb <http://www.w3.org/2002/07/owl#unionOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fca .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fcb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc8 <http://www.w3.org/2002/07/owl#unionOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fc7 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7faa <http://www.w3.org/2002/07/owl#oneOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fa9 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7faa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataRange> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fa6 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PHYSIOL-LEFT-TO-RIGHT"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ffa <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#CELLTYPE> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ffa <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#CONTROL-TYPE> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff7 <http://www.w3.org/2002/07/owl#hasValue> "ACTIVATION"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#ID> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd6 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fb4 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ACTIVATION-NONALLOSTERIC"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#STOICHIOMETRIC-COEFFICIENT> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe4 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.biopax.org/release/biopax-level1.owl#complexAssembly> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#transport> .
+<http://www.biopax.org/release/biopax-level1.owl#complexAssembly> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction> .
+<http://www.biopax.org/release/biopax-level1.owl#complexAssembly> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#conversion> .
+<http://www.biopax.org/release/biopax-level1.owl#complexAssembly> <http://www.w3.org/2000/01/rdf-schema#comment> "A conversion interaction in which a set of physical entities, at least one being a macromolecule (protein or RNA), aggregate via non-covalent interactions. One of the participants of a complexAssembly must be an instance of the class complex.  Synonyms for this class include 'aggregation' and 'complexFormation'. Examples of this class include the assembling of the TFB2 and TFB3 proteins into the TFIIH complex, and the assembly of the ribosome through aggregation of its subunits.\n\nNOTE: This class is also used to represent complex disassembly. The direction in which the complexAssembly occurs (toward either assembly or disassembly) is specified via either the SPONTANEOUS slot or the DIRECTION slot (in the catalysis class), depending on whether the interaction occurs spontaneously or must be catalyzed in order to occur.\n\nNOTE:  The following are not examples of complex assembly: Covalent phosphorylation of a protein (this is a biochemicalReaction), the TFIIH complex itself (this is an instance of the complex class, not the complexAssembly class)."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#complexAssembly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#NAME> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#NAME> <http://www.w3.org/2000/01/rdf-schema#domain> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fd2 .
+<http://www.biopax.org/release/biopax-level1.owl#NAME> <http://www.w3.org/2000/01/rdf-schema#comment> "The preferred full name for this entity."@en .
+<http://www.biopax.org/release/biopax-level1.owl#NAME> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "R-L"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> .
+<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#smallMolecule> .
+<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the chemical structure and other information about this molecule, using an instance of class chemicalStructure."@en .
+<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#TITLE> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#TITLE> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#publicationXref> .
+<http://www.biopax.org/release/biopax-level1.owl#TITLE> <http://www.w3.org/2000/01/rdf-schema#comment> "The title of the publication."@en .
+<http://www.biopax.org/release/biopax-level1.owl#TITLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fef <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#NAME> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fef <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fef <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.biopax.org/release/biopax-level1.owl#MOLECULAR-WEIGHT> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.biopax.org/release/biopax-level1.owl#MOLECULAR-WEIGHT> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#smallMolecule> .
+<http://www.biopax.org/release/biopax-level1.owl#MOLECULAR-WEIGHT> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the molecular weight of the molecule, in daltons."@en .
+<http://www.biopax.org/release/biopax-level1.owl#MOLECULAR-WEIGHT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fce <http://www.w3.org/2002/07/owl#unionOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fcd .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fce <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fd0 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#bioSource> .
+<http://www.biopax.org/release/biopax-level1.owl#URL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#URL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#publicationXref> .
+<http://www.biopax.org/release/biopax-level1.owl#URL> <http://www.w3.org/2000/01/rdf-schema#comment> "The URL at which the publication can be found, if it is available through the Web."@en .
+<http://www.biopax.org/release/biopax-level1.owl#URL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fad <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fac .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fad <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INHIBITION-UNCOMPETITIVE"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7faf .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INHIBITION-IRREVERSIBLE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#DATA-SOURCE> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#dataSource> .
+<http://www.biopax.org/release/biopax-level1.owl#DATA-SOURCE> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#entity> .
+<http://www.biopax.org/release/biopax-level1.owl#DATA-SOURCE> <http://www.w3.org/2000/01/rdf-schema#comment> "A free text description of the source of this data e.g. a database or person name."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#DATA-SOURCE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#dataSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#xref> .
+<http://www.biopax.org/release/biopax-level1.owl#dataSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#dataSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#pathwayStep> .
+<http://www.biopax.org/release/biopax-level1.owl#dataSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> .
+<http://www.biopax.org/release/biopax-level1.owl#dataSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> .
+<http://www.biopax.org/release/biopax-level1.owl#dataSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#bioSource> .
+<http://www.biopax.org/release/biopax-level1.owl#dataSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#utilityClass> .
+<http://www.biopax.org/release/biopax-level1.owl#dataSource> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of the source of this data e.g. a database or person name.  Currently, this class only contains a free text description, but may be made more structured in future levels."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#dataSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#DELTA-G> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.biopax.org/release/biopax-level1.owl#DELTA-G> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction> .
+<http://www.biopax.org/release/biopax-level1.owl#DELTA-G> <http://www.w3.org/2000/01/rdf-schema#comment> "For biochemical reactions, this slot refers to the standard transformed Gibbs energy change for a reaction written in terms of biochemical reactants (sums of species), delta-G'<sup>o</sup>.\n\n  delta-G'<sup>o</sup> = -RT lnK'\nand\n  delta-G'<sup>o</sup> = delta-H'<sup>o</sup> - T delta-S'<sup>o</sup>\n\ndelta-G'<sup>o</sup> has units of kJ/mol.  Like K', it is a function of temperature (T), ionic strength (I), pH, and pMg (pMg = -log<sub>10</sub>[Mg<sup>2+</sup>]). Therefore, these quantities must be specified, and values for DELTA-G for biochemical reactions are represented as 5-tuples of the form (delta-G'<sup>o</sup> T I pH pMg).  This slot may have multiple values, representing different measurements for delta-G'<sup>o</sup> obtained under the different experimental conditions listed in the 5-tuple.\n\n(This definition from EcoCyc)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#DELTA-G> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#CONTROL-TYPE> <http://www.w3.org/2000/01/rdf-schema#range> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fb7 .
+<http://www.biopax.org/release/biopax-level1.owl#CONTROL-TYPE> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#control> .
+<http://www.biopax.org/release/biopax-level1.owl#CONTROL-TYPE> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the nature of the control relationship between the CONTROLLER and the CONTROLLED entities.\n\nThe following terms are possible values:\n\nACTIVATION:  General activation\n\nThe following term can not be used in the catalysis class:\nINHIBITION: General inhibition\n\nThe following terms can only be used in the modulation class:\nINHIBITION-ALLOSTERIC\nAllosteric inhibitors decrease the specified enzyme activity by binding reversibly to the enzyme and inducing a conformational change that decreases the affinity of the enzyme to its substrates without affecting its VMAX.  Allosteric inhibitors can be competitive or noncompetitive inhibitors, therefore, those inhibition categories can be used in conjunction with this category.\n\nINHIBITION-COMPETITIVE\nCompetitive inhibitors are compounds that competitively inhibit the specified enzyme activity by binding reversibly to the enzyme and preventing the substrate from binding.  Binding of the inhibitor and substrate are mutually exclusive because it is assumed that the inhibitor and substrate can both bind only to the free enzyme.  A competitive inhibitor can either bind to the active site of the enzyme, directly excluding the substrate from binding there, or it can bind to another site on the enzyme, altering the conformation of the enzyme such that the substrate can not bind to the active site.\n\nINHIBITION-IRREVERSIBLE\nIrreversible inhibitors are compounds that irreversibly inhibit the specified enzyme activity by binding to the enzyme and dissociating so slowly that it is considered irreversible.  For example, alkylating agents, such as iodoacetamide, irreversibly inhibit the catalytic activity of some enzymes by modifying cysteine side chains.\n\nINHIBITION-NONCOMPETITIVE\nNoncompetitive inhibitors are compounds that noncompetitively inhibit the specified enzyme by binding reversibly to both the free enzyme and to the enzyme-substrate complex.  The inhibitor and substrate may be bound to the enzyme simultaneously and do not exclude each other. However, only the enzyme-substrate complex (not the enzyme-substrate-inhibitor complex) is catalytically active.\n\nINHIBITION-OTHER\nCompounds that inhibit the specified enzyme activity by a mechanism that has been characterized, but that cannot be clearly classified as irreversible, competitive, noncompetitive, uncompetitive, or allosteric.\n\nINHIBITION-UNCOMPETITIVE\nUncompetitive inhibitors are compounds that uncompetitively inhibit the specified enzyme activity by binding reversibly to the enzyme-substrate complex but not to the enzyme alone.\n\nINHIBITION-UNKMECH\nCompounds that inhibit the specified enzyme activity by an unknown mechanism.  The mechanism is defined as unknown, because either the mechanism has yet to be elucidated in the experimental literature, or the paper(s) curated thus far do not define the mechanism, and a full literature search has yet to be performed.\n\nACTIVATION-UNKMECH\nCompounds that activate the specified enzyme activity by an unknown mechanism.  The mechanism is defined as unknown, because either the mechanism has yet to be elucidated in the experimental literature, or the paper(s) curated thus far do not define the mechanism, and a full literature search has yet to be performed.\n\nACTIVATION-NONALLOSTERIC\nNonallosteric activators increase the specified enzyme activity by means other than allosteric.\n\nACTIVATION-ALLOSTERIC\nAllosteric activators increase the specified enzyme activity by binding reversibly to the enzyme and inducing a conformational change that increases the affinity of the enzyme to its substrates without affecting its VMAX."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#CONTROL-TYPE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ffd <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#TAXON-XREF> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ffd <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ffd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.biopax.org/release/biopax-level1.owl#STEP-INTERACTIONS> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#interaction> .
+<http://www.biopax.org/release/biopax-level1.owl#STEP-INTERACTIONS> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#pathwayStep> .
+<http://www.biopax.org/release/biopax-level1.owl#STEP-INTERACTIONS> <http://www.w3.org/2000/01/rdf-schema#comment> "The interactions that take place at this step of the pathway."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#STEP-INTERACTIONS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fdc <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#SEQUENCE> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fdc <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fdc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.biopax.org/release/biopax-level1.owl#TERM> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#TERM> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> .
+<http://www.biopax.org/release/biopax-level1.owl#TERM> <http://www.w3.org/2000/01/rdf-schema#comment> "The external controlled vocabulary term."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#TERM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#CHEMICAL-FORMULA> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd9 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fbb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fba .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fbb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#complex> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#rna> .
+<http://www.biopax.org/release/biopax-level1.owl#relationshipXref> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#unificationXref> .
+<http://www.biopax.org/release/biopax-level1.owl#relationshipXref> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#publicationXref> .
+<http://www.biopax.org/release/biopax-level1.owl#relationshipXref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fdd .
+<http://www.biopax.org/release/biopax-level1.owl#relationshipXref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fde .
+<http://www.biopax.org/release/biopax-level1.owl#relationshipXref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fdf .
+<http://www.biopax.org/release/biopax-level1.owl#relationshipXref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#xref> .
+<http://www.biopax.org/release/biopax-level1.owl#relationshipXref> <http://www.w3.org/2000/01/rdf-schema#comment> "An xref that defines a reference to an entity in an external resource that does not have the same biological identity as the referring entity.  For example, if one wished to define a link between a gene G in a BioPAX data collection, and the protein product P of that gene in an external database, one would use a relationship link, because G and P are different biological entities (one is a gene and one is a protein). Another example is a relationship xref for a protein that refers to the Gene Ontology biological process, e.g. 'immune response,' that the protein is involved in."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#relationshipXref> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#complexAssembly> .
+<http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#conversion> .
+<http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction> <http://www.w3.org/2000/01/rdf-schema#comment> "A conversion interaction in which one or more entities (substrates) undergo covalent changes to become one or more other entities (products).  The substrates of biochemical reactions are defined in terms of sums of species. This is what is typically done in biochemistry, and, in principle, all of the EC reactions should be biochemical reactions. \n\nExample: ATP + H2O = ADP + Pi.\n\nIn this reaction, ATP is considered to be an equilibrium mixture of several species, namely ATP4-, HATP3-, H2ATP2-, MgATP2-, MgHATP-, and Mg2ATP. Additional species may also need to be considered if other ions (e.g. Ca2+) that bind ATP are present. Similar considerations apply to ADP and to inorganic phosphate (Pi). When writing biochemical reactions, it is important not to attach charges to the biochemical reactants and not to include ions such as H+ and Mg2+ in the equation. The reaction is written in the direction specified by the EC nomenclature system, if applicable, regardless of the physiological direction(s) in which the reaction proceeds. (This definition from EcoCyc)\n\nNOTE: Polymerization reactions involving large polymers whose structure is not explicitly captured should generally be represented as unbalanced reactions in which the monomer is consumed but the polymer remains unchanged, e.g. glycogen + glucose = glycogen."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#pathwayStep> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#xref> .
+<http://www.biopax.org/release/biopax-level1.owl#pathwayStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fe7 .
+<http://www.biopax.org/release/biopax-level1.owl#pathwayStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#utilityClass> .
+<http://www.biopax.org/release/biopax-level1.owl#pathwayStep> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> .
+<http://www.biopax.org/release/biopax-level1.owl#pathwayStep> <http://www.w3.org/2000/01/rdf-schema#comment> "A utility class that describes the order in which interactions occur in a pathway. The interactions that take place at a pathway step are listed and an ordering relationship between pathway steps by pointing to the next pathwayStep(s) in the pathway is given.  For example, a metabolic pathway may contain a pathway step composed of one biochemical reaction (BR1) and one catalysis (CAT1) instance, where CAT1 describes the catalysis of BR1."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#pathwayStep> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#pathwayStep> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> .
+<http://www.biopax.org/release/biopax-level1.owl#pathwayStep> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#bioSource> .
+<http://www.biopax.org/release/biopax-level1.owl#pathwayStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#pathwayStep> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#dataSource> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fea <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#CONTROLLED> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fea <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.biopax.org/release/biopax-level1.owl#catalysis> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#STEP-INTERACTIONS> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe7 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.biopax.org/release/biopax-level1.owl#COFACTOR> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS> .
+<http://www.biopax.org/release/biopax-level1.owl#COFACTOR> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#COFACTOR> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#catalysis> .
+<http://www.biopax.org/release/biopax-level1.owl#COFACTOR> <http://www.w3.org/2000/01/rdf-schema#comment> "Any cofactor(s) or coenzyme(s) required for catalysis of the conversion by the enzyme."@en .
+<http://www.biopax.org/release/biopax-level1.owl#COFACTOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#pathwayStep> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "REVERSIBLE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#PHYSICAL-ENTITY> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#physicalEntity> .
+<http://www.biopax.org/release/biopax-level1.owl#PHYSICAL-ENTITY> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#PHYSICAL-ENTITY> <http://www.w3.org/2000/01/rdf-schema#comment> "The physical entity annotated with stoichiometry and cellular location attributes from the physicalEntityParticipant instance."@en .
+<http://www.biopax.org/release/biopax-level1.owl#PHYSICAL-ENTITY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#conversion> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#control> .
+<http://www.biopax.org/release/biopax-level1.owl#conversion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7ff1 .
+<http://www.biopax.org/release/biopax-level1.owl#conversion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7ff2 .
+<http://www.biopax.org/release/biopax-level1.owl#conversion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#interaction> .
+<http://www.biopax.org/release/biopax-level1.owl#conversion> <http://www.w3.org/2000/01/rdf-schema#comment> "An interaction in which one or more entities is physically transformed into one or more other entities.  This class is designed to represent a simple, single-step transformation.  Multi-step transformations, such as the conversion of glucose to pyruvate in the glycolysis pathway, should be represented as pathways, if known.  Since it is a highly abstract class in the ontology, instances of the conversion class should be created rarely, if ever."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#conversion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#pathwayStep> .
+<http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7ff4 .
+<http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "A utility class that defines a small molecule structure.  An instance of this class can also define additional information about a small molecule, such as its chemical formula, names, and synonyms. This information is stored in the slot STRUCTURE-DATA, in one of two formats: the CML format (see URL www.xml-cml.org) or the SMILES format (see URL www.daylight.com/dayhtml/smiles/). The STRUCTURE-FORMAT slot specifies which format used is used.  An example is the following SMILES string, which describes the structure of glucose-6-phosphate:\n\n'C(OP(=O)(O)O)[CH]1([CH](O)[CH](O)[CH](O)[CH](O)O1)'."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#bioSource> .
+<http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#dataSource> .
+<http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#xref> .
+<http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#utilityClass> .
+<http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7ff5 .
+<http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> .
+<http://www.biopax.org/release/biopax-level1.owl#SYNONYMS> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#SYNONYMS> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#entity> .
+<http://www.biopax.org/release/biopax-level1.owl#SYNONYMS> <http://www.w3.org/2000/01/rdf-schema#comment> "One or more synonyms for the name of this entity."@en .
+<http://www.biopax.org/release/biopax-level1.owl#SYNONYMS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#entity> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#utilityClass> .
+<http://www.biopax.org/release/biopax-level1.owl#entity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fef .
+<http://www.biopax.org/release/biopax-level1.owl#entity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7ff0 .
+<http://www.biopax.org/release/biopax-level1.owl#entity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.biopax.org/release/biopax-level1.owl#entity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any concept that we will refer to as a discrete biological unit when describing pathways. This is the root class for all biological concepts in the ontology, which include pathways, interactions and physical entities. Synonyms for this class include 'thing', 'object' and 'bioentity'. As the most abstract class in the ontology, instances of the entity class should be created rarely, if ever."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#STRUCTURE-DATA> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff5 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#ID-VERSION> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd4 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.biopax.org/release/biopax-level1.owl#SHORT-NAME> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#SHORT-NAME> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#entity> .
+<http://www.biopax.org/release/biopax-level1.owl#SHORT-NAME> <http://www.w3.org/2000/01/rdf-schema#comment> "An abbreviated name for this entity. Preferably a name that is short enough to be used in a visualization application to label a graphical element that represents this entity. If no short name is available, an xref may be used for this purpose."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#SHORT-NAME> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fb2 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ACTIVATION"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#AUTHORS> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#AUTHORS> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#publicationXref> .
+<http://www.biopax.org/release/biopax-level1.owl#AUTHORS> <http://www.w3.org/2000/01/rdf-schema#comment> "The authors of this publication, one per slot value."@en .
+<http://www.biopax.org/release/biopax-level1.owl#AUTHORS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#AVAILABILITY> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#AVAILABILITY> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#entity> .
+<http://www.biopax.org/release/biopax-level1.owl#AVAILABILITY> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the availability of this data (e.g. a copyright statement)."@en .
+<http://www.biopax.org/release/biopax-level1.owl#AVAILABILITY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fdf <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#RELATIONSHIP-TYPE> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fdf <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#ORGANISM> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe2 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fbe <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fbd .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fbe <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#entity> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fc0 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#entity> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7f9f .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CML"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#KEQ> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.biopax.org/release/biopax-level1.owl#KEQ> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction> .
+<http://www.biopax.org/release/biopax-level1.owl#KEQ> <http://www.w3.org/2000/01/rdf-schema#comment> "The measured equilibrium constant for a biochemical reaction, encoded by the slot KEQ, is actually the apparent equilibrium constant, K'.  Concentrations in the equilibrium constant equation refer to the total concentrations of  all forms of particular biochemical reactants. For example, in the equilibrium constant equation for the biochemical reaction in which ATP is hydrolyzed to ADP and inorganic phosphate:\n\nK' = [ADP][P<sub>i</sub>]/[ATP],\n\nThe concentration of ATP refers to the total concentration of all of the following species:\n\n[ATP] = [ATP<sup>4-</sup>] + [HATP<sup>3-</sup>] + [H<sub>2</sub>ATP<sup>2-</sup>] + [MgATP<sup>2-</sup>] + [MgHATP<sup>-</sup>] + [Mg<sub>2</sub>ATP].\n\nThe apparent equilibrium constant is formally dimensionless, and can be kept so by inclusion of as many of the terms (1 mol/dm<sup>3</sup>) in the numerator or denominator as necessary.  It is a function of temperature (T), ionic strength (I), pH, and pMg (pMg = -log<sub>10</sub>[Mg<sup>2+</sup>]). Therefore, these quantities must be specified, and values for KEQ for biochemical reactions are represented as 5-tuples of the form (K' T I pH pMg).  This slot may have multiple values, representing different measurements for K' obtained under the different experimental conditions listed in the 5-tuple.\n\n(This definition from EcoCyc)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#KEQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#rna> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#smallMolecule> .
+<http://www.biopax.org/release/biopax-level1.owl#rna> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#protein> .
+<http://www.biopax.org/release/biopax-level1.owl#rna> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#complex> .
+<http://www.biopax.org/release/biopax-level1.owl#rna> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fdb .
+<http://www.biopax.org/release/biopax-level1.owl#rna> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fdc .
+<http://www.biopax.org/release/biopax-level1.owl#rna> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#physicalEntity> .
+<http://www.biopax.org/release/biopax-level1.owl#rna> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical entity consisting of a sequence of ribonucleotide monophosphates; a ribonucleic acid (e.g. messengerRNA, microRNA, ribosomalRNA). A specific example is the let-7 microRNA."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#rna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#protein> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#smallMolecule> .
+<http://www.biopax.org/release/biopax-level1.owl#protein> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#rna> .
+<http://www.biopax.org/release/biopax-level1.owl#protein> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#complex> .
+<http://www.biopax.org/release/biopax-level1.owl#protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fe2 .
+<http://www.biopax.org/release/biopax-level1.owl#protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fe3 .
+<http://www.biopax.org/release/biopax-level1.owl#protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#physicalEntity> .
+<http://www.biopax.org/release/biopax-level1.owl#protein> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical entity consisting of a sequence of amino-acids; a protein monomer; a single polypeptide chain.  An example is the EGFR protein."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#protein> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#CHEMICAL-FORMULA> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#CHEMICAL-FORMULA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#smallMolecule> .
+<http://www.biopax.org/release/biopax-level1.owl#CHEMICAL-FORMULA> <http://www.w3.org/2000/01/rdf-schema#comment> "The chemical formula of the small molecule.\n\nNote: chemical formula can also be stored in the STRUCTURE slot (in CML). In case of disagreement between the value of this slot and that in the CML file, the CML value takes precedence."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#CHEMICAL-FORMULA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fed <http://www.w3.org/2002/07/owl#unionOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fec .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#SHORT-NAME> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff0 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fcc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fcc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#utilityClass> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#rna> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fab <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fab <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INHIBITION"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#interaction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#physicalEntity> .
+<http://www.biopax.org/release/biopax-level1.owl#interaction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#pathway> .
+<http://www.biopax.org/release/biopax-level1.owl#interaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fee .
+<http://www.biopax.org/release/biopax-level1.owl#interaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#entity> .
+<http://www.biopax.org/release/biopax-level1.owl#interaction> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity that defines a single biochemical interaction between two or more entities. An interaction cannot be defined without the entities it relates. Since it is a highly abstract class in the ontology, instances of the interaction class should be created rarely.\n\nCLASS-DESIGN-RATIONALE: Interaction was chosen as it is understood by biologists in a biological context and is compatible with PSI-MI (http://psidev.sf.net)."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#interaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fa7 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "IRREVERSIBLE-RIGHT-TO-LEFT"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#DB-VERSION> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#DB-VERSION> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#xref> .
+<http://www.biopax.org/release/biopax-level1.owl#DB-VERSION> <http://www.w3.org/2000/01/rdf-schema#comment> "The version of the external database in which this xref was last known to be valid."@en .
+<http://www.biopax.org/release/biopax-level1.owl#DB-VERSION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#RELATIONSHIP-TYPE> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#RELATIONSHIP-TYPE> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#relationshipXref> .
+<http://www.biopax.org/release/biopax-level1.owl#RELATIONSHIP-TYPE> <http://www.w3.org/2000/01/rdf-schema#comment> "This slot names the type of relationship between the BioPAX object linked from, and the external object linked to, such as 'gene of this protein', or 'protein with similar sequence'."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#RELATIONSHIP-TYPE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#xref> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#dataSource> .
+<http://www.biopax.org/release/biopax-level1.owl#xref> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#xref> <http://www.w3.org/2000/01/rdf-schema#comment> "A utility class that defines a reference between an instance of a class in this ontology to an object in an external resource.  As the most abstract xref class in the ontology, instances of the xref class should be created rarely, if ever."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#xref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fd6 .
+<http://www.biopax.org/release/biopax-level1.owl#xref> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> .
+<http://www.biopax.org/release/biopax-level1.owl#xref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fd4 .
+<http://www.biopax.org/release/biopax-level1.owl#xref> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#xref> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#pathwayStep> .
+<http://www.biopax.org/release/biopax-level1.owl#xref> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> .
+<http://www.biopax.org/release/biopax-level1.owl#xref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fd5 .
+<http://www.biopax.org/release/biopax-level1.owl#xref> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#bioSource> .
+<http://www.biopax.org/release/biopax-level1.owl#xref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fd3 .
+<http://www.biopax.org/release/biopax-level1.owl#xref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#utilityClass> .
+<http://www.biopax.org/release/biopax-level1.owl#CELLULAR-LOCATION> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> .
+<http://www.biopax.org/release/biopax-level1.owl#CELLULAR-LOCATION> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#CELLULAR-LOCATION> <http://www.w3.org/2000/01/rdf-schema#comment> "A cellular location, e.g. 'cytoplasm'.  This should reference a term in the Gene Ontology Cellular Component ontology. The location referred to by this slot should be as specific as is known. If an interaction is known to occur in multiple locations, separate interactions (and physicalEntityParticipants) must be created for each different location.\n\nNote: If a location is unknown then the GO term for 'cellular component unknown' (GO:0008372) should be used in the LOCATION slot.\n\nNote: Cellular location describes a specific location of a physical entity as it would be used in e.g. a transport reaction. It does not describe all of the possible locations that the physical entity could be in the cell."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#CELLULAR-LOCATION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ffb <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#TISSUE> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ffb <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#DIRECTION> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff8 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fda <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#MOLECULAR-WEIGHT> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fda <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fda <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#ID> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd7 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fb5 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ACTIVATION-ALLOSTERIC"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#DIRECTION> <http://www.w3.org/2000/01/rdf-schema#range> _:Aa0d9731X3aX1249182f13bX3aXX2dX7faa .
+<http://www.biopax.org/release/biopax-level1.owl#DIRECTION> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#catalysis> .
+<http://www.biopax.org/release/biopax-level1.owl#DIRECTION> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the reaction direction of the interaction catalyzed by this instance of the catalysis class.\n\nPossible values of this slot are:\n\nREVERSIBLE: Interaction occurs in both directions in physiological settings.\n\nPHYSIOL-LEFT-TO-RIGHT\nPHYSIOL-RIGHT-TO-LEFT\nThe interaction occurs in the specified direction in physiological settings,  because of several possible factors including the energetics of the reaction, local concentrations\nof reactants and products, and the regulation of the enzyme or its expression.\n\nIRREVERSIBLE-LEFT-TO-RIGHT\nIRREVERSIBLE-RIGHT-TO-LEFT\nFor all practical purposes, the interactions occurs only in the specified direction in physiological settings, because of chemical properties of the reaction.\n\n(This definition from EcoCyc)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#DIRECTION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#NEXT-STEP> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#pathwayStep> .
+<http://www.biopax.org/release/biopax-level1.owl#NEXT-STEP> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#pathwayStep> .
+<http://www.biopax.org/release/biopax-level1.owl#NEXT-STEP> <http://www.w3.org/2000/01/rdf-schema#comment> "The next step(s) of the pathway.  Contains zero or more pathwayStep instances.  If there is no next step, this slot is empty."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#NEXT-STEP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#CONTROLLED> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS> .
+<http://www.biopax.org/release/biopax-level1.owl#CONTROLLED> <http://www.w3.org/2000/01/rdf-schema#range> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fc2 .
+<http://www.biopax.org/release/biopax-level1.owl#CONTROLLED> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#control> .
+<http://www.biopax.org/release/biopax-level1.owl#CONTROLLED> <http://www.w3.org/2000/01/rdf-schema#comment> "The entity that is controlled, e.g., in a biochemical reaction, the reaction is controlled by an enzyme."@en .
+<http://www.biopax.org/release/biopax-level1.owl#CONTROLLED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#CELLULAR-LOCATION> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe5 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fc3 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#entity> .
+<http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS> <http://www.w3.org/2000/01/rdf-schema#range> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fc5 .
+<http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#interaction> .
+<http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS> <http://www.w3.org/2000/01/rdf-schema#comment> "This slot lists the entities that participate in this interaction. For example, in a biochemical reaction, the participants are the union of the reactants and the products of the reaction."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fa2 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "L-R"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE-DATA> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE-DATA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> .
+<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE-DATA> <http://www.w3.org/2000/01/rdf-schema#comment> "This slot holds a string of data defining chemical structure or other information, in either the CML or SMILES format, as specified in slot Structure-Format. If, for example, the CML format is used, then the value of this slot is a string containing the XML encoding of the CML data."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE-DATA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#ID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#ID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#xref> .
+<http://www.biopax.org/release/biopax-level1.owl#ID> <http://www.w3.org/2000/01/rdf-schema#comment> "The primary identifier in the external database of the object to which this xref refers."@en .
+<http://www.biopax.org/release/biopax-level1.owl#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#utilityClass> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#entity> .
+<http://www.biopax.org/release/biopax-level1.owl#utilityClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Utility classes are created when simple slots are insufficient to describe an aspect of an entity or to increase compatibility of this ontology with other standards.  The utilityClass class is only present to organize the other helper classes under one class hierarchy; instances of utilityClass should never be created."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#utilityClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#RIGHT> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS> .
+<http://www.biopax.org/release/biopax-level1.owl#RIGHT> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#RIGHT> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#conversion> .
+<http://www.biopax.org/release/biopax-level1.owl#RIGHT> <http://www.w3.org/2000/01/rdf-schema#comment> "The participants on the right side of the conversion interaction. Since conversion interactions may proceed in either the left-to-right or right-to-left direction, occupants of the RIGHT slot may be either reactants or products."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#RIGHT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#EC-NUMBER> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#EC-NUMBER> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction> .
+<http://www.biopax.org/release/biopax-level1.owl#EC-NUMBER> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique number assigned to a reaction by the Enzyme Commission of the International Union of Biochemistry and Molecular Biology.\n\nNote that not all biochemical reactions currently have EC numbers assigned to them."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#EC-NUMBER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#CONTROL-TYPE> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff3 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#xref> .
+<http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#pathwayStep> .
+<http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#dataSource> .
+<http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> .
+<http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#bioSource> .
+<http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#utilityClass> .
+<http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> <http://www.w3.org/2000/01/rdf-schema#comment> "A utility class used to import terms from external controlled vocabularies (CVs) into the ontology. To support consistency and compatibility, open, freely available CVs should be used whenever possible, such as the Gene Ontology (GO).  A repository for open biological CVs has been created by the OBO project (http://obo.sourceforge.net/)."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fcf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fcf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#entity> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd2 <http://www.w3.org/2002/07/owl#unionOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fd1 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fd2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE-FORMAT> <http://www.w3.org/2000/01/rdf-schema#range> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fa1 .
+<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE-FORMAT> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#chemicalStructure> .
+<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE-FORMAT> <http://www.w3.org/2000/01/rdf-schema#comment> "This slot specifies which format is used to define chemical structure data."@en .
+<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE-FORMAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fae <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fad .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fae <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INHIBITION-OTHER"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fb0 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INHIBITION-COMPETITIVE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#DELTA-H> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.biopax.org/release/biopax-level1.owl#DELTA-H> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction> .
+<http://www.biopax.org/release/biopax-level1.owl#DELTA-H> <http://www.w3.org/2000/01/rdf-schema#comment> "For biochemical reactions, this slot refers to the standard transformed enthalpy change for a reaction written in terms of biochemical reactants (sums of species), delta-H'<sup>o</sup>.\n\n  delta-G'<sup>o</sup> = delta-H'<sup>o</sup> - T delta-S'<sup>o</sup>\n\n(This definition from EcoCyc)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#DELTA-H> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#smallMolecule> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#rna> .
+<http://www.biopax.org/release/biopax-level1.owl#smallMolecule> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#protein> .
+<http://www.biopax.org/release/biopax-level1.owl#smallMolecule> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#complex> .
+<http://www.biopax.org/release/biopax-level1.owl#smallMolecule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fd9 .
+<http://www.biopax.org/release/biopax-level1.owl#smallMolecule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fda .
+<http://www.biopax.org/release/biopax-level1.owl#smallMolecule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#physicalEntity> .
+<http://www.biopax.org/release/biopax-level1.owl#smallMolecule> <http://www.w3.org/2000/01/rdf-schema#comment> "Any bioactive molecule that is not a peptide, protein, or RNA. Generally these are non-polymeric, but complex carbohydrates and DNA are not explicitly modeled as classes in this version of the ontology, thus are forced into this class. Note that there is a known lack of adequate small molecule databases to cross-reference from this class."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#smallMolecule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#modulation> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#catalysis> .
+<http://www.biopax.org/release/biopax-level1.owl#modulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fe9 .
+<http://www.biopax.org/release/biopax-level1.owl#modulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fea .
+<http://www.biopax.org/release/biopax-level1.owl#modulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#control> .
+<http://www.biopax.org/release/biopax-level1.owl#modulation> <http://www.w3.org/2000/01/rdf-schema#comment> "A control interaction in which a physical entity modulates a catalysis interaction. Biologically, most modulation interactions describe an interaction in which a small molecule alters the ability of an enzyme to catalyze a specific reaction. Instances of this class describe a pairing between a modulating entity and a catalysis interaction.  A separate modulation instance should be created for each different catalysis that a physical entity may modulate and for each different physical entity that may modulate a catalysis instance.  A typical modulation instance has a small molecule as the controller entity and a catalysis instance as the controlled entity. Examples of instances of this class include allosteric activation and competitive inhibition of an enzyme's ability to catalyze a specific reaction."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#modulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fdd <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#DB> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fdd <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fdd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#TITLE> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe0 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fbc <http://www.w3.org/2002/07/owl#unionOf> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fbb .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fbc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fb8 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#protein> .
+<http://www.biopax.org/release/biopax-level1.owl#STOICHIOMETRIC-COEFFICIENT> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.biopax.org/release/biopax-level1.owl#STOICHIOMETRIC-COEFFICIENT> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+<http://www.biopax.org/release/biopax-level1.owl#STOICHIOMETRIC-COEFFICIENT> <http://www.w3.org/2000/01/rdf-schema#comment> "Each value of this slot represents the stoichiometric coefficient for one of the physical entities in an interaction or complex."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#STOICHIOMETRIC-COEFFICIENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#transportWithBiochemicalReaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#transport> .
+<http://www.biopax.org/release/biopax-level1.owl#transportWithBiochemicalReaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction> .
+<http://www.biopax.org/release/biopax-level1.owl#transportWithBiochemicalReaction> <http://www.w3.org/2000/01/rdf-schema#comment> "A conversion interaction that is both a biochemical reaction and a transport.  In transportWithBiochemicalReaction interactions, one or more of the substrates change both their location and their physical structure.  For example, in the PEP-dependent phosphotransferase system, transportation of sugar into an E. coli cell is accompanied by the sugar's phosphorylation as it crosses the plasma membrane.  Also, active transporters that use ATP as an energy source fall under this category, even if the only covalent change is the hydrolysis of ATP to ADP."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#transportWithBiochemicalReaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#complex> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#smallMolecule> .
+<http://www.biopax.org/release/biopax-level1.owl#complex> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#rna> .
+<http://www.biopax.org/release/biopax-level1.owl#complex> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.biopax.org/release/biopax-level1.owl#protein> .
+<http://www.biopax.org/release/biopax-level1.owl#complex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.biopax.org/release/biopax-level1.owl#physicalEntity> .
+<http://www.biopax.org/release/biopax-level1.owl#complex> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical entity whose structure is comprised of other physical entities bound to each other non-covalently, at least one of which is a macromolecule (protein or RNA). Complexes must be stable enough to function as a biological unit; in general, the temporary association of an enzyme with its substrate(s) should not be considered or represented as a complex. A complex is the physical product of an interaction (complex assembly), thus is not an interaction itself. Examples of this class include complexes of multiple protein monomers and complexes of proteins and small molecules.\n\nNOTE: Complexes can be defined recursively to describe smaller complexes within larger complexes, e.g., a participant in a complex can itself be a complex. \n\nNOTE: The boundaries on the size of complexes described by this class are not defined here, although elements of the cell as large and dynamic as, e.g., a mitochondrion would typically not be described using this class (later versions of this ontology may include a cellularComponent class to represent these).  The strength of binding of the components is also not described."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.biopax.org/release/biopax-level1.owl#TAXON-XREF> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.biopax.org/release/biopax-level1.owl#xref> .
+<http://www.biopax.org/release/biopax-level1.owl#TAXON-XREF> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#bioSource> .
+<http://www.biopax.org/release/biopax-level1.owl#TAXON-XREF> <http://www.w3.org/2000/01/rdf-schema#comment> "An xref to an organism taxonomy database, preferably NCBI taxon.  This should be a unification xref, unless the organism is not in an existing database."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#TAXON-XREF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#SEQUENCE> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#SEQUENCE> <http://www.w3.org/2000/01/rdf-schema#domain> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fcb .
+<http://www.biopax.org/release/biopax-level1.owl#SEQUENCE> <http://www.w3.org/2000/01/rdf-schema#comment> "Polymer sequence in uppercase letters."@en .
+<http://www.biopax.org/release/biopax-level1.owl#SEQUENCE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.biopax.org/release/biopax-level1.owl#ORGANISM> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe8 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fe8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fca <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fc9 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fca <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#protein> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fc6 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fc7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.biopax.org/release/biopax-level1.owl#interaction> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7f9f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7f9f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SMILES"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Aa0d9731X3aX1249182f13bX3aXX2dX7fa5 .
+_:Aa0d9731X3aX1249182f13bX3aXX2dX7fa6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PHYSIOL-RIGHT-TO-LEFT"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#YEAR> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.biopax.org/release/biopax-level1.owl#YEAR> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#publicationXref> .
+<http://www.biopax.org/release/biopax-level1.owl#YEAR> <http://www.w3.org/2000/01/rdf-schema#comment> "The year in which this publication was published."@en .
+<http://www.biopax.org/release/biopax-level1.owl#YEAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.biopax.org/release/biopax-level1.owl#SOURCE> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#SOURCE> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.biopax.org/release/biopax-level1.owl#publicationXref> .
+<http://www.biopax.org/release/biopax-level1.owl#SOURCE> <http://www.w3.org/2000/01/rdf-schema#comment> "The source  in which the reference was published, such as: a book title, or a journal title and volume and pages."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.biopax.org/release/biopax-level1.owl#SOURCE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .

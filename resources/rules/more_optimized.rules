@@ -1,0 +1,89 @@
+// D* entailment rules
+// delim: "()[], \t\n\r"
+// lg, rdf2-D and rdfs1 have been implemented as preprocessing hooks
+
+[lg-rdfs1: (?v ?p ?l), isPLiteral(?l), assignAnon(?l, ?b) -> (?v ?p ?b), (?b rdf:type rdfs:Literal)]
+
+[lg-rdfs2D: (?v ?p ?l), isDLiteral(?l, ?t), assignAnon(?l, ?b) -> (?v ?p ?b), (?b rdf:type ?t)]
+
+[rdf1: (?v ?p ?w) -> (?p rdf:type rdf:Property)]
+
+[rdfs2: (?p rdfs:domain ?u), (?v ?p ?w) -> (?v rdf:type ?u)]
+
+[rdfs3: (?p rdfs:range ?u), (?v ?p ?w), notLiteral(?w) -> (?w rdf:type ?u)]
+
+[rdfs4a: (?v ?p ?w) -> (?v rdf:type rdfs:Resource)]
+
+[rdfs4b: (?v ?p ?w), notLiteral(?w) -> (?w rdf:type rdfs:Resource)]
+  
+[rdfs5: (?v rdfs:subPropertyOf ?w), (?w rdfs:subPropertyOf ?u) -> (?v rdfs:subPropertyOf ?u)]
+
+[rdfs6: (?v rdf:type rdf:Property) -> (?v rdfs:subPropertyOf ?v)]
+
+[rdfs7x: (?p rdfs:subPropertyOf ?q), (?v ?p ?w) -> (?v ?q ?w)]
+
+[rdfs8: (?v rdf:type owl:Class) -> (?v rdfs:subClassOf rdfs:Resource)]
+
+[rdfs9: (?v rdfs:subClassOf ?w), (?u rdf:type ?v) -> (?u rdf:type ?w)]
+
+[rdfs10: (?v rdf:type owl:Class) -> (?v rdfs:subClassOf ?v)]
+
+[rdfs11:  (?v rdfs:subClassOf ?w), (?w rdfs:subClassOf ?u) -> (?v rdfs:subClassOf ?u)]
+
+[rdfs12: (?v rdf:type rdfs:ContainerMembershipProperty) -> (?v rdfs:subPropertyOf rdfs:member)]
+
+[rdfs13: (?v rdf:type rdfs:Datatype) -> (?v rdfs:subClassOf rdfs:Literal)]
+
+
+// P-entailment rules
+
+[rdfp1: (?p rdf:type owl:FunctionalProperty), (?u ?p ?v), (?u ?p ?w), notLiteral(?v) -> (?v owl:sameAs ?w)]
+
+[rdfp2: (?p rdf:type owl:InverseFunctionalProperty), (?u ?p ?w), (?v ?p ?w) -> (?u owl:sameAs ?v)]
+
+[rdfp3: (?p rdf:type owl:SymmetricProperty), (?v ?p ?w), notLiteral(w) -> (?w ?p ?v)]
+
+[rdfp4: (?p rdf:type owl:TransitiveProperty), (?u ?p ?v), (?v ?p ?w) -> (?u ?p ?w)]
+
+[rdfp5a: (?v ?p ?w) -> (?v owl:sameAs ?v)]
+
+[rdfp5b: (?v ?p ?w), notLiteral(?w) -> (?w owl:sameAs ?w)]
+
+[rdfp6: (?v owl:sameAs ?w), notLiteral(?w) -> (?w owl:sameAs ?v)]
+
+[rdfp7: (?u owl:sameAs ?v), (?v owl:sameAs ?w) -> (?u owl:sameAs ?w)]
+
+[rdfp8ax: (?p owl:inverseOf ?q), (?v ?p ?w), notLiteral(?w) -> (?w ?q ?v)]
+
+[rdfp8bx: (?p owl:inverseOf ?q), (?v ?q ?w), notLiteral(?w) -> (?w ?p ?v)]
+
+[rdfp9: (?v rdf:type owl:Class), (?v owl:sameAs ?w) -> (?v rdfs:subClassOf ?w)]
+
+[rdfp10: (?p rdf:type rdf:Property), (?p owl:sameAs ?q) -> (?p rdfs:subPropertyOf ?q)]
+
+[rdfp11: (?u owl:sameAs ?up), (?u ?p ?v), (?v owl:sameAs ?vp), notLiteral(?up) -> (?up ?p ?vp)]
+
+[rdfp12a: (?v owl:equivalentClass ?w) -> (?v rdfs:subClassOf ?w)]
+
+[rdfp12b: (?v owl:equivalentClass ?w), notLiteral(?w) -> (?w rdfs:subClassOf ?v)]
+
+[rdfp12c: (?v rdfs:subClassOf ?w), (?w rdfs:subClassOf ?v) -> (?v owl:equivalentClass ?w)]
+
+[rdfp13a: (?v owl:equivalentProperty ?w) -> (?v rdfs:subPropertyOf ?w)]
+
+[rdfp13b: (?v owl:equivalentProperty ?w), notLiteral(?w) -> (?w rdfs:subPropertyOf ?v)]
+
+[rdfp13c: (?v rdfs:subPropertyOf ?w), (?w rdfs:subPropertyOf ?v) -> (?v owl:equivalentProperty ?w)]
+
+[rdfp14a: (?v owl:hasValue ?w), (?v owl:onProperty ?p), (?u ?p ?w) -> (?u rdf:type ?v)]
+
+[rdfp14bx: (?v owl:hasValue ?w), (?v owl:onProperty ?p), (?u rdf:type ?v), notLiteral(?p) -> (?u ?p ?w)]
+
+[rdfp15: (?v owl:someValuesFrom ?w), (?v owl:onProperty ?p), (?x rdf:type ?w), (?u ?p ?x) -> (?u rdf:type ?v)]
+
+[rdfp16: (?v owl:allValuesFrom ?w), (?v owl:onProperty ?p), (?u rdf:type ?v), (?u ?p ?x), notLiteral(?x) -> (?x rdf:type ?w)]
+
+
+// pD*sv entailment
+
+[rdf-svx: (?v owl:someValuesFrom ?w), (?v owl:onProperty ?p), (?u rdf:type ?v), notExistSomeValuesFromRestriction(?u, ?p, ?w), makeTemp(?b) -> (?u ?p ?b), (?b rdf:type ?w)]

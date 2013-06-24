@@ -1,0 +1,2 @@
+<http://www.example.com/Car> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.com/Vehicle> .
+<http://www.example.com/Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.com/Stuff> .
