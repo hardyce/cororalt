@@ -191,9 +191,10 @@ public class RETEConflictSet {
                                
                                 }
                             if(latest==null){
-                                engine.deleteTriple(late, true);
+                                //below are removed as assigning ts's to facts which orignally don't have one does not make sense
+                                //engine.deleteTriple(late, true);
                                 
-                                engine.addTriple(temp,true);
+                                //engine.addTriple(temp,true);
                             }    
                             else if(temp.getTime()>latest.getTime()){
                                 //System.out.println(latest.toString());

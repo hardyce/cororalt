@@ -149,6 +149,11 @@ public class RETEEngine implements TemporalFRuleEngineI {
     if(predicatesUsed!=null){
     predicatesUsed.clear();
     }
+    if(clauseIndex!=null){
+    clauseIndex.clear();
+    }
+    
+    wildcardRule=false;
         if(ReasonerConfig.shareNodes == true){
             // RETE with shared nodes
             compileAlpha(rules, ignoreBrules);
