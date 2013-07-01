@@ -14,6 +14,8 @@ import ie.tcd.cs.nembes.coror.debug.Debugger;
 import ie.tcd.cs.nembes.coror.graph.Node;
 import ie.tcd.cs.nembes.coror.graph.Triple;
 import ie.tcd.cs.nembes.coror.reasoner.rulesys.impl.RETEQueue.Count;
+import ie.tcd.cs.nembes.coror.util.OneToManyMap;
+import ie.tcd.cs.nembes.coror.util.iterator.ConcatenatedIterator;
 import java.lang.UnsupportedOperationException;
 import java.util.Vector;
 
@@ -52,6 +54,8 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
     /// Fields for test uses
     ////////////////////////////////////////////////////////
     
+    protected OneToManyMap otm;
+    
     /** the id of the filter node */
     public String id = "";
     
@@ -62,13 +66,14 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
      * @param pbvSize size of the partial binding vector this RETE queue will produce for successful joins
      */
     public RETEQueueNS(JoinStrategy strategy, boolean left, int pbvSize, String name){
-        this(strategy, new CacheMap(), left, pbvSize, name);
+        this(strategy, new CacheMap(), left, pbvSize, name,new OneToManyMap());
     }
     
     /**
      * This constructor is called to share a buffer.
      */
-    public RETEQueueNS(JoinStrategy strategy, Map queue, boolean left, int pbvSize, String name){
+    public RETEQueueNS(JoinStrategy strategy, Map queue, boolean left, int pbvSize, String name,OneToManyMap onetomany){
+        this.otm  = onetomany;
         this.queue = queue;
         this.strategies = strategy;
         this.left = left;
@@ -91,7 +96,7 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
      * change the count again. This is to maintain correct count for 
      */
     void fire(PBV env, boolean isAdd, boolean processed){
-
+int firecount=0;
         
         // Store the new token in this store
         
@@ -103,14 +108,39 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
             // no entry yet
             if (!isAdd) return;
             queue.put(env, new Count(1));
+            Node[] environment = env.getEnvironment();
+            for(int y=0;y<environment.length;y++){
+                
+                    
+                    otm.put(environment[y],env);  
+                
+            }
         } else {
-            if (isAdd) {
+            if (isAdd) {/*
+                    
                     count.inc();
+                    
+                int indexOf = queue.keySet().indexOf(env);
+                Object get = queue.keySet().get(indexOf);
+                if(get instanceof TemporalPBV && env instanceof TemporalPBV){
+                    TemporalPBV tget = (TemporalPBV)get;
+                    TemporalPBV tenv= (TemporalPBV)env;
+                    if(tget.getTimeStamp()<tenv.getTimeStamp()){
+                        queue.remove(get);
+                        queue.put(tenv,count);
+                        
+                    }
+                }
+                */
             } else {
-//                if(!processed){
+                //                if(!processed){
+                Node[] environment = env.getEnvironment();
                     count.dec();
                     if (count.getCount() == 0) {
                         queue.remove(env);
+                        for(int y =0;y<environment.length;y++){
+                        otm.remove(environment[y], env);
+                        }
                     }
 //                }
             }
@@ -129,15 +159,27 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
             byte strategyCount = (byte)strategies.count;
             byte[] left = strategies.left, right = strategies.right;
             Node[] candidate, envNodes, newNodes;
+            envNodes = env.getEnvironment();
             Object cont;
             boolean queueCounterProcessed, requiredNode;
             byte continuationSize = (byte)continuations.size();
-            for (Iterator i = sibling.queue.keySet().iterator(); i.hasNext(); ) {
-                
+            
+            Iterator all=null;
+            for(int y=0;y<envNodes.length;y++){
+                if(all==null){
+                all = sibling.otm.getAll(envNodes[y]);
+                }
+                else{
+                all = new ConcatenatedIterator(all ,sibling.otm.getAll(envNodes[y]));
+                }
+            }
+            //for (Iterator i = sibling.queue.keySet().iterator(); i.hasNext(); ) {
+              //  System.out.println(firecount);
+            for (Iterator i = all; i.hasNext(); ) {    
                 //XXX use this when trace is not required.
                 PBV cand = ((PBV)i.next());
                 candidate = cand.getEnvironment();
-                envNodes = env.getEnvironment();
+                
 
 //                System.err.println(env + " JOIN " +cand);
                 
@@ -226,6 +268,8 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
                     }
                 }
 //                 if(Coror.printJoin) System.err.println();
+                //System.out.println(firecount);
+                //firecount++;
             }            
         }
         else{
@@ -235,9 +279,19 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
             boolean matchOK, requiredNode, queueCounterProcessed=false;
             byte strategyCount = (byte)strategies.count, continuationSize = (byte)continuations.size();;
             PBV newEnv;
+            envNodes = env.getEnvironment();
             Object cont;
-            for (Iterator i = sibling.queue.keySet().iterator(); i.hasNext(); ) {
-
+            Iterator all=null;
+            for(int y=0;y<envNodes.length;y++){
+                if(all==null){
+                all = sibling.otm.getAll(envNodes[y]);
+                }
+                else{
+                all = new ConcatenatedIterator(all ,sibling.otm.getAll(envNodes[y]));
+                }
+            }
+            for (Iterator i = all; i.hasNext(); ) {
+//for (Iterator i = sibling.queue.keySet().iterator(); i.hasNext(); ) {
                 //XXX use this when trace is not required.
                 PBV cand = (PBV)i.next();
                 candidate = cand.getEnvironment();

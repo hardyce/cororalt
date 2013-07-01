@@ -108,6 +108,7 @@ public class List implements Collection{
     }
     
     public boolean remove(Object o) {
+       
 	return v.removeElement(o);
     }
 

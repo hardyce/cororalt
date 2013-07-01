@@ -473,12 +473,14 @@ System.out.println("burn this "+(endex-startex));
                 // looking for share
                 boolean shareJoin = false;
                 Map sharedBuffer = null;
+                OneToManyMap otm =null;
                 RETEQueueNS leftQ = null;
                 List priorConts = prior.getContinuations();
                 for(int i=0; i<priorConts.size(); i++){                    
                     if(priorConts.get(i) instanceof RETEQueueNS){
                         RETEQueueNS continuation = (RETEQueueNS)priorConts.get(i);
-                        sharedBuffer = continuation.queue;                        
+                        sharedBuffer = continuation.queue;   
+                        otm=continuation.otm;
                         if(continuation.sibling.parent == condition && 
                                 continuation.getJoinStrategies().sameStrategyAs(strategy)){
                             /** 
@@ -496,7 +498,7 @@ System.out.println("burn this "+(endex-startex));
                 if(leftQ == null && sharedBuffer == null)
                     leftQ = new RETEQueueNS(strategy, true, priorVarList.size(), generateQueueNodeName(prior.getNodeID(), condition.getNodeID())); // now the priorVarList is the newPriorVarList
                 else if(leftQ == null && sharedBuffer != null)
-                    leftQ = new RETEQueueNS(strategy, sharedBuffer, true, priorVarList.size(), generateQueueNodeName(prior.getNodeID(), condition.getNodeID()));
+                    leftQ = new RETEQueueNS(strategy, sharedBuffer, true, priorVarList.size(), generateQueueNodeName(prior.getNodeID(), condition.getNodeID()),otm);
                 
                 RETEQueueNS rightQ = null;
                 if(shareJoin)
@@ -506,7 +508,7 @@ System.out.println("burn this "+(endex-startex));
                     for(int i=0; i<continuations.size(); i++)
                         if(continuations.get(i) instanceof RETEQueueNS){
                             // construct a rightQ with shared buffer
-                            rightQ = new RETEQueueNS(strategy, ((RETEQueueNS)continuations.get(i)).queue, false, priorVarList.size(), generateQueueNodeName(prior.getNodeID(), condition.getNodeID()));
+                            rightQ = new RETEQueueNS(strategy, ((RETEQueueNS)continuations.get(i)).queue, false, priorVarList.size(), generateQueueNodeName(prior.getNodeID(), condition.getNodeID()),((RETEQueueNS)continuations.get(i)).otm);
                             break;
                         }
                     if(rightQ == null) // construct a rightQ with new buffer
@@ -640,7 +642,7 @@ System.out.println("burn this "+(endex-startex));
      * added to the deductions graph.
      */
     public synchronized void addTriple(Triple triple, boolean deduction) {
-        
+        //infGraph.getRawGraph().delete(triple);
         if (deletesPending.size() > 0) deletesPending.remove(triple);
         
         addsPending.add(triple);
@@ -648,6 +650,7 @@ System.out.println("burn this "+(endex-startex));
             infGraph.addDeduction(triple);
             
         }
+        
     }
     
     /**
