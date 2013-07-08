@@ -76,9 +76,10 @@ public class Coror {
         
     }
     public static void main(String[] args) {
-        Coror reasoner = new Coror("D:/working/NetBeansProjects/Coror/resources/reasoner.config");         
-        reasoner.startReasoner();
+        Coror reasoner = new Coror("C:\\Users\\Colin\\Coror\\resources\\reasoner.config");         
         
+        reasoner.loadOntology();
+        reasoner.startReasoner();
         for(ExtendedIterator it = reasoner.getInfGraph().find(Node.ANY, Node.ANY, Node.ANY); it.hasNext();){
             System.err.println(it.next());
         }

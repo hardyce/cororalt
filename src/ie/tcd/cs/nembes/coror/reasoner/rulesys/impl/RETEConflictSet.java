@@ -199,7 +199,7 @@ public class RETEConflictSet {
                             else if(temp.getTime()>latest.getTime()){
                                 //System.out.println(latest.toString());
                                 //System.out.println("hereIam");
-                                engine.deleteTriple(latest, true);
+                                //engine.deleteTriple(latest, true);
                                 
                                 engine.addTriple(temp, true);
                                 }

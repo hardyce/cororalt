@@ -39,6 +39,9 @@ public abstract class BaseInfGraph extends GraphBase implements InfGraph {
 
     /** The graph of raw data which is being reasoned over */
     protected FGraph fdata;
+    
+    /**the graph of triples to be added*/
+    FGraph fadd;
 
     /** Flag, if set to true then derivations are recorded */
 //    protected boolean recordDerivations;

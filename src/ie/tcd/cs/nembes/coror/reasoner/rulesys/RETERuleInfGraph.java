@@ -1,8 +1,10 @@
 package ie.tcd.cs.nembes.coror.reasoner.rulesys;
 
+import ie.tcd.cs.nembes.coror.graph.Factory;
 import ie.tcd.cs.nembes.coror.graph.Graph;
 import ie.tcd.cs.nembes.coror.graph.Triple;
 import ie.tcd.cs.nembes.coror.graph.temporal.TemporalTriple;
+import ie.tcd.cs.nembes.coror.reasoner.FGraph;
 import ie.tcd.cs.nembes.coror.reasoner.Reasoner;
 import ie.tcd.cs.nembes.coror.reasoner.rulesys.impl.RETEEngine;
 import ie.tcd.cs.nembes.coror.reasoner.rulesys.impl.TemporalFRuleEngineI;
@@ -15,7 +17,6 @@ import ie.tcd.cs.nembes.coror.util.List;
  * @version $Revision: 1.11 $ on $Date: 2008/01/02 12:07:47 $
  */
 public class RETERuleInfGraph extends BasicForwardRuleInfGraph {
-
     /**
      * Constructor. Creates a new inference graph to which a (compiled) rule set
      * and a data graph can be attached. This separation of binding is useful to allow
@@ -26,9 +27,15 @@ public class RETERuleInfGraph extends BasicForwardRuleInfGraph {
      * @param reasoner the parent reasoner 
      * @param schema the (optional) schema data which is being processed
      */
+    
     public RETERuleInfGraph(Reasoner reasoner, Graph schema) {
         super(reasoner, schema);
-    }    
+    }  
+    
+    public void addnewTriple(Triple t){
+   
+    fadd.getGraph().add(t);
+}
 
     /**
      * Constructor. Creates a new inference graph based on the given rule set. 
@@ -80,6 +87,7 @@ public class RETERuleInfGraph extends BasicForwardRuleInfGraph {
         if (!isPrepared) prepare();
         fdata.getGraph().add(t);
         engine.add(t);
+        
     }
     
     /** 

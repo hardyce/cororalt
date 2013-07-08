@@ -51,10 +51,12 @@ public class BasicForwardRuleInfGraph extends BaseInfGraph implements ForwardRul
 
 //=======================================================================
 // variables
-    
+    /** counter of runs**/
+    int r=0;
     /** The set of deduced triples, this is in addition to base triples in the fdata graph */
     protected FGraph fdeductions;
     
+    public FGraph fadd;
     /** Reference to any schema graph data bound into the parent reasoner */
     protected Graph schemaGraph;
     
@@ -196,12 +198,24 @@ public class BasicForwardRuleInfGraph extends BaseInfGraph implements ForwardRul
             System.out.println("end of preload");
         }
         System.out.println("rules loaded "+rulesLoaded);
+        if(r==0){
         if (rulesLoaded) {
             engine.fastInit(fdata); 
         } else {
             engine.init(true, fdata);
         }
+        }
+        else{
+            System.out.println("in new insertion protocol");
+            engine.init(true, fadd);
+                                }
+        r++;
         
+    }
+    public void runAll(){
+        
+        ((RETEEngine)engine).runAll();
+        isPrepared=true;
     }
 
     /**
@@ -294,6 +308,7 @@ public class BasicForwardRuleInfGraph extends BaseInfGraph implements ForwardRul
      */
     public synchronized void performAdd(Triple t) {
         version++;
+        
         fdata.getGraph().add(t);
         if (isPrepared) {
             engine.add(t);

@@ -352,6 +352,7 @@ public class RETEClauseFilterNS extends RETESourceNode implements SharedNodeI, F
                  */
                 Debugger.NoSM_All++;
                 boolean queueCounterAdded = false;
+                
                 for(int i=0; i<continuations.size(); i++){
                     if(continuations.get(i) instanceof RETEQueueNS){
                         if(queueCounterAdded == false){

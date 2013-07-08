@@ -141,18 +141,29 @@ public class RETEEngine implements TemporalFRuleEngineI {
      * raw data graph but may include additional deductions made by preprocessing hooks
      */
     public void init(boolean ignoreBrules, Finder inserts) {
+        
         long startex=System.currentTimeMillis();
-    ruleConditionIndex.clear();
+        if(ruleConditionIndex!=null){
+            ruleConditionIndex.clear();
+    System.out.println("rci "+ruleConditionIndex.size());
+        }
+    
     if(ruleVariableIndex!=null){
     ruleVariableIndex.clear();
+        System.out.println("rvi "+ruleVariableIndex.size());
     }
     if(predicatesUsed!=null){
-    predicatesUsed.clear();
+    //predicatesUsed.clear();
+        System.out.println("pu "+predicatesUsed.size());
     }
     if(clauseIndex!=null){
-    clauseIndex.clear();
+    //clauseIndex.clear();
+        System.out.println("ci "+clauseIndex.size());
     }
     
+    
+    
+   
     wildcardRule=false;
         if(ReasonerConfig.shareNodes == true){
             // RETE with shared nodes
@@ -213,6 +224,8 @@ System.out.println("burn this "+(endex-startex));
      * raw data graph but may include additional deductions made by preprocessing hooks
      */
     public void fastInit(Finder inserts) {
+        int j=0;
+        
         conflictSet = new RETEConflictSet(new RETERuleContext(infGraph, this), isMonotonic);
         // Below is used during testing to ensure that all ruleset work (if less efficiently) if marked as non-monotonic
 //        conflictSet = new RETEConflictSet(new RETERuleContext(infGraph, this), false);
@@ -222,7 +235,10 @@ System.out.println("burn this "+(endex-startex));
             if (wildcardRule) {
                 for (Iterator i = inserts.find(new TriplePattern(null, null, null)); i.hasNext(); ) {
                     addTriple((Triple)i.next(), false);
+                    j++;
                 }
+                System.out.println(j+" inserts");
+                
             } else {
                 for (Iterator p = predicatesUsed.iterator(); p.hasNext(); ) {
                     Node predicate = (Node)p.next();
@@ -240,7 +256,7 @@ System.out.println("burn this "+(endex-startex));
         System.out.println("run tim "+(runend-runst));
     }
     
-    
+  
     
     /**
      * Add one triple to the data graph, run any rules triggered by
@@ -498,7 +514,7 @@ System.out.println("burn this "+(endex-startex));
                 if(leftQ == null && sharedBuffer == null)
                     leftQ = new RETEQueueNS(strategy, true, priorVarList.size(), generateQueueNodeName(prior.getNodeID(), condition.getNodeID())); // now the priorVarList is the newPriorVarList
                 else if(leftQ == null && sharedBuffer != null)
-                    leftQ = new RETEQueueNS(strategy, sharedBuffer, true, priorVarList.size(), generateQueueNodeName(prior.getNodeID(), condition.getNodeID()),otm);
+                    leftQ = new RETEQueueNS(strategy, sharedBuffer, true, priorVarList.size(), generateQueueNodeName(prior.getNodeID(), condition.getNodeID()));
                 
                 RETEQueueNS rightQ = null;
                 if(shareJoin)
@@ -508,7 +524,7 @@ System.out.println("burn this "+(endex-startex));
                     for(int i=0; i<continuations.size(); i++)
                         if(continuations.get(i) instanceof RETEQueueNS){
                             // construct a rightQ with shared buffer
-                            rightQ = new RETEQueueNS(strategy, ((RETEQueueNS)continuations.get(i)).queue, false, priorVarList.size(), generateQueueNodeName(prior.getNodeID(), condition.getNodeID()),((RETEQueueNS)continuations.get(i)).otm);
+                            rightQ = new RETEQueueNS(strategy, ((RETEQueueNS)continuations.get(i)).queue, false, priorVarList.size(), generateQueueNodeName(prior.getNodeID(), condition.getNodeID()));
                             break;
                         }
                     if(rightQ == null) // construct a rightQ with new buffer
@@ -762,6 +778,8 @@ System.out.println("burn this "+(endex-startex));
      */
     public void runAll() {
 //        state ++;
+        System.out.println("Adds Pending "+addsPending.size());
+            System.out.println("Deletes Pending "+deletesPending.size());
         while(true) {
             
             boolean isAdd = false;
@@ -827,10 +845,11 @@ System.out.println("add "+t.toString());
         }
         else {System.out.println("del "+t.toString());} */
         Iterator i1 = clauseIndex.getAll(t.getPredicate());
-
+        
         Iterator i2 = clauseIndex.getAll(Node.ANY);
 
         Iterator i = new ConcatenatedIterator(i1, i2);
+        
         while (i.hasNext()) {   
             ((FireTripleI)i.next()).fire(t, isAdd);      
         }
