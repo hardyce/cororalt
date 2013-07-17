@@ -24,7 +24,7 @@ public interface FRuleEngineI {
      * @param inserts the set of triples to be processed, normally this is the
      * raw data graph but may include additional deductions made by preprocessing hooks
      */
-    public void init(boolean ignoreBrules, Finder inserts);
+    public void init(boolean ignoreBrules, Finder inserts,boolean first);
     
     /**
      * Process all available data. This version expects that all the axioms 

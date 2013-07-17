@@ -256,7 +256,9 @@ public class RETEClauseFilterNS extends RETESourceNode implements SharedNodeI, F
      * @param isAdd true if the triple is being added to the working set.
      */
     public void fire(Triple triple, boolean isAdd) {
-
+        if(triple instanceof TemporalTriple){
+        //System.out.println("fire "+triple.toString());
+        }
         Functor lastFunctor = null;     // bound by TESTFunctorName
         PBV env = null;       // bound by CREATEToken
         Node n = null; // Temp workspace
@@ -323,9 +325,9 @@ public class RETEClauseFilterNS extends RETESourceNode implements SharedNodeI, F
 //                    env = new PartialTraceBindingVector_Test(new Node[instructions[pc++]], trace);
 //                }
                 
-                if(triple instanceof TemporalTriple)
+                if(triple instanceof TemporalTriple){
                    
-                    env = new TemporalPBV(new Node[instructions[pc++]], ((TemporalTriple)triple).getTime());
+                    env = new TemporalPBV(new Node[instructions[pc++]], ((TemporalTriple)triple).getTime());}
                 else
                     env = new PBV(new Node[instructions[pc++]]);
                 
@@ -352,15 +354,17 @@ public class RETEClauseFilterNS extends RETESourceNode implements SharedNodeI, F
                  */
                 Debugger.NoSM_All++;
                 boolean queueCounterAdded = false;
-                
+                //System.out.print("size of cont "+continuations.size());
                 for(int i=0; i<continuations.size(); i++){
                     if(continuations.get(i) instanceof RETEQueueNS){
                         if(queueCounterAdded == false){
                             ((RETESinkNode)continuations.get(i)).fire(env, isAdd);
                             queueCounterAdded = true;
                         }
-                        else
+                        else{
+                            //System.out.println("alpha fire "+env.getEnvironment()[0]);
                             ((RETEQueueNS)continuations.get(i)).fire(env, isAdd, true);
+                        }
                     }
                     else
                         ((RETETerminal)continuations.get(i)).fire(env, isAdd);

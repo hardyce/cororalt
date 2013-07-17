@@ -109,6 +109,7 @@ public class RETEConflictSet {
      * Return true if there was a rule to fire.
      */
     public boolean fireOne() {
+        
         if (isEmpty()) return false;
         int index = conflictSet.size() - 1;
         CSEntry cse = (CSEntry)conflictSet.remove(index);
@@ -165,6 +166,7 @@ public class RETEConflictSet {
                         if (isAdd) {
                             
                             if ( ! context.contains(t)) {
+                               
                                 engine.addTriple(t, true);
 //                                System.err.println(" Triple inferred " + t);
                         }

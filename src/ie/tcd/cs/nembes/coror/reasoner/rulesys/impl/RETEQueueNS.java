@@ -53,7 +53,7 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
     ////////////////////////////////////////////////////////
     /// Fields for test uses
     ////////////////////////////////////////////////////////
-    
+    /** this map is used to create the table to perform efficient joins**/
     protected OneToManyMap otm;
     
     /** the id of the filter node */
@@ -66,20 +66,21 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
      * @param pbvSize size of the partial binding vector this RETE queue will produce for successful joins
      */
     public RETEQueueNS(JoinStrategy strategy, boolean left, int pbvSize, String name){
-        this(strategy, new CacheMap(), left, pbvSize, name);
+        this(strategy, new CacheMap(), left, pbvSize, name, new OneToManyMap());
     }
     
     /**
      * This constructor is called to share a buffer.
      */
-    public RETEQueueNS(JoinStrategy strategy, Map queue, boolean left, int pbvSize, String name){
-        
+    public RETEQueueNS(JoinStrategy strategy, Map queue, boolean left, int pbvSize, String name, OneToManyMap otm){
+        this.otm=otm;
         this.queue = queue;
         this.strategies = strategy;
         this.left = left;
         this.pbvSize = pbvSize;
         this.continuations = new List();
         this.id = name;
+        this.sibling=null;
     }
     
     @Override
@@ -107,16 +108,18 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
         if (count == null) {
             // no entry yet
             if (!isAdd) return;
-            queue.put(env, new Count(1));
+            //queue.put(env, new Count(1));
             Node[] environment = env.getEnvironment();
-            /*
+            /** places the mapping into the table, allowing for quick lookup**/
+            
             for(int y=0;y<environment.length;y++){
                 
                     
                     otm.put(environment[y],env);  
                 
             }
-            */
+            
+            
         } else {
             if (isAdd) {
                     
@@ -140,11 +143,11 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
                     count.dec();
                     if (count.getCount() == 0) {
                         queue.remove(env);
-                        /*
+                        /**remove from table**/
                         for(int y =0;y<environment.length;y++){
                         otm.remove(environment[y], env);
                         }
-                        */
+                        
                     }
 //                }
             }
@@ -167,7 +170,8 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
             Object cont;
             boolean queueCounterProcessed, requiredNode;
             byte continuationSize = (byte)continuations.size();
-            /*
+            /** below creates the iterator, only giving values that will be succesfully joined**/
+            
             Iterator all=null;
             for(int y=0;y<envNodes.length;y++){
                 if(all==null){
@@ -177,10 +181,10 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
                 all = new ConcatenatedIterator(all ,sibling.otm.getAll(envNodes[y]));
                 }
             }
-            */
-            for (Iterator i = sibling.queue.keySet().iterator(); i.hasNext(); ) {
+            
+            //for (Iterator i = sibling.queue.keySet().iterator(); i.hasNext(); ) {
               //  System.out.println(firecount);
-            //for (Iterator i = all; i.hasNext(); ) {    
+            for (Iterator i = all; i.hasNext(); ) {    
                 //XXX use this when trace is not required.
                 PBV cand = ((PBV)i.next());
                 candidate = cand.getEnvironment();
@@ -286,7 +290,8 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
             PBV newEnv;
             envNodes = env.getEnvironment();
             Object cont;
-            /*
+            /** below creates the iterator, only giving values that will be succesfully joined**/
+            
             Iterator all=null;
             for(int y=0;y<envNodes.length;y++){
                 if(all==null){
@@ -296,9 +301,9 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
                 all = new ConcatenatedIterator(all ,sibling.otm.getAll(envNodes[y]));
                 }
             }
-            */
-            //for (Iterator i = all; i.hasNext(); ) {
-for (Iterator i = sibling.queue.keySet().iterator(); i.hasNext(); ) {
+            
+            for (Iterator i = all; i.hasNext(); ) {
+//for (Iterator i = sibling.queue.keySet().iterator(); i.hasNext(); ) {
                 //XXX use this when trace is not required.
                 PBV cand = (PBV)i.next();
                 candidate = cand.getEnvironment();
@@ -387,7 +392,9 @@ for (Iterator i = sibling.queue.keySet().iterator(); i.hasNext(); ) {
     
     private PBV getNewPartialBindingVector(PBV left, PBV right, Node[] payload){
         if(left instanceof TemporalPBV && right instanceof TemporalPBV){
+            //System.out.println("joined "+((TemporalPBV)left).getTimeStamp()+" and "+((TemporalPBV)right).getTimeStamp());
             return new TemporalPBV(payload, ((TemporalPBV)left).getTimeStamp() > ((TemporalPBV)right).getTimeStamp()? ((TemporalPBV)right).getTimeStamp():((TemporalPBV)left).getTimeStamp());
+            
         }
         else if (left instanceof TemporalPBV)
             return new TemporalPBV(payload, ((TemporalPBV)left).getTimeStamp());
@@ -402,30 +409,72 @@ for (Iterator i = sibling.queue.keySet().iterator(); i.hasNext(); ) {
      * @param start start of the time slot.
      * @param end end of the time slot.
      */
-    public void sweepBuffer(long start, long end,boolean sib){
+    public void sweepBuffer(long start, long end,boolean sib) throws ie.tcd.cs.nembes.coror.util.UnsupportedOperationException{
         
         if(tidied) return;       
         
-        Set vectors = queue.keySet();
+        Set vectors = otm.keySet();
+        
         //System.out.println(vectors.size());
-        for(int i=vectors.size()-1; i>=0; i--){
+        Iterator iterator = vectors.iterator();
+        
+        while(iterator.hasNext()){
+           // System.out.println(i);
             
-             Object pbv = vectors.get(i);
+             Object key = iterator.next();
+            Iterator all = otm.getAll(key);
+            while(all.hasNext()){
+                Object pbv=all.next();
              if(!(pbv instanceof TemporalPBV))
                      continue;
              if(((TemporalPBV)pbv).within(start, end)){
-                 //System.out.println("removed "+vectors.get(i).toString());
-                 vectors.remove(i);
-                 
-                 i--;
+                //System.out.println("removed "+vectors.get(i).toString());
+                all.remove();
+             }
+                
+                
              }
         }
+        /*
+        Iterator iterator1 = vectors.iterator();
+        while(iterator1.hasNext()){
             
-        //if(sibling!=null && sibling instanceof RETEQueueNS)
-        
-        if(!sib){
-            sibling.sweepBuffer(start, end,true);
+            PBV pbv = (PBV)iterator1.next();
+            if(pbv instanceof TemporalPBV){
+            Node[] environment = pbv.getEnvironment();
+            for(int j =0;j<environment.length;j++){
+                System.out.print(environment[j]+" ");
+            }
+            System.out.print(((TemporalPBV)pbv).getTimeStamp());
+            System.out.println();
+            }
         }
+        */
+        /*
+        Set vecs = queue.keySet();
+        for(int i=vectors.size()-1; i>=0; i--){
+        Object pbv = vecs.get(i);
+        PBV pb=(PBV)pbv;
+        Node[] environment = pb.getEnvironment();
+        int size=environment.length;
+        if(pbv instanceof TemporalPBV){
+        if(((TemporalPBV)pbv).getTimeStamp()<start){
+        for(int j=0;j<size;j++){
+        System.out.print(environment[j].toString()+" ");
+        System.out.print(((TemporalPBV)pbv).getTimeStamp());
+                
+        }
+        System.out.println();
+        }
+        }
+        }
+         */
+        tidied=true;
+        if(sibling!=null && sibling instanceof RETEQueueNS){
+        
+        //if(!sib){
+            sibling.sweepBuffer(start, end,false);
+       }
         for(int i=0; i<continuations.size(); i++){
             Object continuation = continuations.get(i);
             if(continuation != null && continuation instanceof RETEQueueNS){
@@ -433,6 +482,7 @@ for (Iterator i = sibling.queue.keySet().iterator(); i.hasNext(); ) {
             }
                 
         }
+        
     }
     
     /**
@@ -447,6 +497,38 @@ for (Iterator i = sibling.queue.keySet().iterator(); i.hasNext(); ) {
                 ((RETEQueueNS)continuation).finishSweep();
             }      
         }        
+    }
+    public void readBuffer(long j){
+        Set vectors = queue.keySet();
+        //System.out.println(vectors.size());
+        Iterator iterator = vectors.iterator();
+        while(iterator.hasNext()){
+           // System.out.println(i);
+             Object pbv = iterator.next();
+             if((pbv instanceof TemporalPBV))
+                
+             {
+                 TemporalPBV tpbv=(TemporalPBV)pbv;
+                Node[] environment = tpbv.getEnvironment();
+                if(tpbv.getTimeStamp()<=j){
+                System.out.println("time here "+tpbv.getTimeStamp());
+                }
+                /*
+                for(int i =0;i<environment.length;i++){
+                    System.out.println("RETE "+environment[i].toString());
+             }
+             */
+                 }
+             //if(sibling!=null&&sibling instanceof RETEQueueNS)
+             //sibling.readBuffer(j);
+             
+                //System.out.println("removed "+vectors.get(i).toString());
+                
+             
+                
+                
+             
+        }
     }
     
 //    private String beAsString(Node[] be){

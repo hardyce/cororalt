@@ -18,8 +18,11 @@ import ie.tcd.cs.nembes.coror.util.List;
 import ie.tcd.cs.nembes.coror.util.Map;
 import ie.tcd.cs.nembes.coror.util.OneToManyMap;
 import ie.tcd.cs.nembes.coror.util.Set;
+import ie.tcd.cs.nembes.coror.util.UnsupportedOperationException;
 import ie.tcd.cs.nembes.coror.util.iterator.ConcatenatedIterator;
 import ie.tcd.cs.nembes.coror.util.iterator.ExtendedIterator;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 
@@ -140,16 +143,18 @@ public class RETEEngine implements TemporalFRuleEngineI {
      * @param inserts the set of triples to be processed, normally this is the
      * raw data graph but may include additional deductions made by preprocessing hooks
      */
-    public void init(boolean ignoreBrules, Finder inserts) {
-        
+    public void init(boolean ignoreBrules, Finder inserts, boolean first) {
+        /** the commented out lines below were from before where the network would be recompiled, in which case
+         * I tried to clear every thing, I had problems with continuations continually being added though, so I
+         * decided to change it to reuse the rete network, which is more sensical anyway**/
         long startex=System.currentTimeMillis();
         if(ruleConditionIndex!=null){
-            ruleConditionIndex.clear();
+            //ruleConditionIndex.clear();
     System.out.println("rci "+ruleConditionIndex.size());
         }
     
     if(ruleVariableIndex!=null){
-    ruleVariableIndex.clear();
+    //ruleVariableIndex.clear();
         System.out.println("rvi "+ruleVariableIndex.size());
     }
     if(predicatesUsed!=null){
@@ -167,10 +172,19 @@ public class RETEEngine implements TemporalFRuleEngineI {
     wildcardRule=false;
         if(ReasonerConfig.shareNodes == true){
             // RETE with shared nodes
+            /**first is true for initial reasoning, false for the rest of the time, called in prepare()**/
+            if(first){
             compileAlpha(rules, ignoreBrules);
             
             compileBeta();
+            
+            }
             findAndProcessAxioms();
+            /** i had to set this to true in order for the inserts to be read correctly after the initial reasoning, im
+             * not sure why a wildcardrule is in reteengine I will have to ask**/
+            wildcardRule=true;
+            
+            
 long endex = System.currentTimeMillis();
 System.out.println("burn this "+(endex-startex));
             fastInit(inserts);
@@ -240,7 +254,9 @@ System.out.println("burn this "+(endex-startex));
                 System.out.println(j+" inserts");
                 
             } else {
+                
                 for (Iterator p = predicatesUsed.iterator(); p.hasNext(); ) {
+                    System.out.println(p.toString());
                     Node predicate = (Node)p.next();
                     for (Iterator i = inserts.find(new TriplePattern(null, predicate, null)); i.hasNext(); ) {
                         Triple t = (Triple)i.next();
@@ -388,7 +404,7 @@ System.out.println("burn this "+(endex-startex));
         }
          
         // dont understand why need predicatesUsed: it is used to selectively match triples with used predicates
-        if (wildcardRule) predicatesUsed = null;        
+        //if (wildcardRule) predicatesUsed = null;        
     }
     
     /**
@@ -514,17 +530,19 @@ System.out.println("burn this "+(endex-startex));
                 if(leftQ == null && sharedBuffer == null)
                     leftQ = new RETEQueueNS(strategy, true, priorVarList.size(), generateQueueNodeName(prior.getNodeID(), condition.getNodeID())); // now the priorVarList is the newPriorVarList
                 else if(leftQ == null && sharedBuffer != null)
-                    leftQ = new RETEQueueNS(strategy, sharedBuffer, true, priorVarList.size(), generateQueueNodeName(prior.getNodeID(), condition.getNodeID()));
+                    leftQ = new RETEQueueNS(strategy, sharedBuffer, true, priorVarList.size(), generateQueueNodeName(prior.getNodeID(), condition.getNodeID()),otm);
                 
                 RETEQueueNS rightQ = null;
-                if(shareJoin)
+                if(shareJoin){
                     rightQ = leftQ.sibling;
+                    rightQ.sibling=leftQ;
+                }
                 else{
                     List continuations = condition.getContinuations();
                     for(int i=0; i<continuations.size(); i++)
                         if(continuations.get(i) instanceof RETEQueueNS){
                             // construct a rightQ with shared buffer
-                            rightQ = new RETEQueueNS(strategy, ((RETEQueueNS)continuations.get(i)).queue, false, priorVarList.size(), generateQueueNodeName(prior.getNodeID(), condition.getNodeID()));
+                            rightQ = new RETEQueueNS(strategy, ((RETEQueueNS)continuations.get(i)).queue, false, priorVarList.size(), generateQueueNodeName(prior.getNodeID(), condition.getNodeID()),((RETEQueueNS)continuations.get(i)).otm);
                             break;
                         }
                     if(rightQ == null) // construct a rightQ with new buffer
@@ -658,6 +676,7 @@ System.out.println("burn this "+(endex-startex));
      * added to the deductions graph.
      */
     public synchronized void addTriple(Triple triple, boolean deduction) {
+        
         //infGraph.getRawGraph().delete(triple);
         if (deletesPending.size() > 0) deletesPending.remove(triple);
         
@@ -700,6 +719,28 @@ System.out.println("burn this "+(endex-startex));
      * @param start start of the time slot.
      * @param end end of the time slot.
      */
+    public void readRETE(long j){
+        Iterator keyIt = ruleConditionIndex.keySet().iterator();
+        System.out.println(ruleConditionIndex.size());
+        // remove T-PBV within a time slot
+        for(;keyIt.hasNext();){
+            Rule rule = (Rule)keyIt.next();
+            Iterator conditionIt = ruleConditionIndex.getAll(rule);
+            
+            while(conditionIt.hasNext()){
+                RETEClauseFilterNS condition = (RETEClauseFilterNS)conditionIt.next();
+                //System.out.println(condition.continuations.size());
+                for(int i=0; i<condition.continuations.size(); i++){
+                    Object node = condition.continuations.get(i);
+                    if(node instanceof RETEQueueNS){
+                        
+                        ((RETEQueueNS)node).readBuffer(j);
+                    }
+                    
+                }
+            }
+        }
+    }
     public void sweepRETE(long start, long end){       
         // delete partial match
      //   System.out.println(ruleVariableIndex.size());
@@ -716,7 +757,11 @@ System.out.println("burn this "+(endex-startex));
                 for(int i=0; i<condition.continuations.size(); i++){
                     Object node = condition.continuations.get(i);
                     if(node instanceof RETEQueueNS)
+                        try {
                         ((RETEQueueNS)node).sweepBuffer(start, end,false);
+                    } catch (UnsupportedOperationException ex) {
+                        Logger.getLogger(RETEEngine.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                 }
             }
         }
@@ -778,6 +823,7 @@ System.out.println("burn this "+(endex-startex));
      */
     public void runAll() {
 //        state ++;
+        int x=0;
         System.out.println("Adds Pending "+addsPending.size());
             System.out.println("Deletes Pending "+deletesPending.size());
         while(true) {
@@ -796,20 +842,24 @@ System.out.println("burn this "+(endex-startex));
             if (next == null) {
                 // Nothing more to inject, if this is a non-mon rule set now process one rule from the conflict set
                 if (conflictSet.isEmpty()) {
+                    System.out.println("run iterations "+x);
                     return; // Finished
                 } 
-                
+                System.out.println("fireone");
                 // Wei: Never reach this in monotonic reasoning. RETEConflictSet.execute()
                 // is called in RETEConflictSet.add().
                 conflictSet.fireOne();
             } else {
+                //System.out.println("inject "+isAdd+" "+next.toString());
 //                if(state > 1){
 //                    boolean temp = next instanceof TempTriple? true:false;
 //                    System.err.println( (isAdd? "add ":"remove ")+(temp? "TempTriple: ":"Triple: ")+next);
 //                }
                 inject(next, isAdd);
             }
+            x++;
         }
+        
     }
     
     /**
@@ -844,6 +894,7 @@ System.out.println("burn this "+(endex-startex));
 System.out.println("add "+t.toString());
         }
         else {System.out.println("del "+t.toString());} */
+        //System.out.println("inject "+isAdd+" "+t.toString());
         Iterator i1 = clauseIndex.getAll(t.getPredicate());
         
         Iterator i2 = clauseIndex.getAll(Node.ANY);
