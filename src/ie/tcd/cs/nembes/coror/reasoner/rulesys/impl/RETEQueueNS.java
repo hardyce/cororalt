@@ -108,7 +108,7 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
         if (count == null) {
             // no entry yet
             if (!isAdd) return;
-            //queue.put(env, new Count(1));
+            queue.put(env, new Count(1));
             Node[] environment = env.getEnvironment();
             /** places the mapping into the table, allowing for quick lookup**/
             

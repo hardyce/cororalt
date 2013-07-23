@@ -535,7 +535,7 @@ System.out.println("burn this "+(endex-startex));
                 RETEQueueNS rightQ = null;
                 if(shareJoin){
                     rightQ = leftQ.sibling;
-                    rightQ.sibling=leftQ;
+                    //rightQ.sibling=leftQ;
                 }
                 else{
                     List continuations = condition.getContinuations();

@@ -1,6 +1,10 @@
 package ie.tcd.cs.nembes.coror.reasoner;
 
+import ie.tcd.cs.nembes.coror.graph.Factory;
 import ie.tcd.cs.nembes.coror.graph.Graph;
+import ie.tcd.cs.nembes.coror.graph.Node;
+import ie.tcd.cs.nembes.coror.graph.Triple;
+import ie.tcd.cs.nembes.coror.graph.impl.GraphImpl;
 import ie.tcd.cs.nembes.coror.util.iterator.ExtendedIterator;
 import ie.tcd.cs.nembes.coror.util.iterator.NullIterator;
 import ie.tcd.cs.nembes.coror.util.iterator.WrappedIterator;
@@ -32,6 +36,18 @@ public class FGraph implements Finder {
      */
     public FGraph(Graph graph) {
         this.graph = graph;
+    }
+    
+    
+    public FGraph(FGraph fg) {
+        graph= Factory.createDefaultGraph();
+        ExtendedIterator find = fg.getGraph().find(Node.ANY, Node.ANY, Node.ANY);
+        while(find.hasNext()){
+            graph.add((Triple)find.next());
+        }
+       
+       
+        
     }
     
     /**

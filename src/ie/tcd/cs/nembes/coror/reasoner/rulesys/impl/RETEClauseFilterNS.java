@@ -256,9 +256,9 @@ public class RETEClauseFilterNS extends RETESourceNode implements SharedNodeI, F
      * @param isAdd true if the triple is being added to the working set.
      */
     public void fire(Triple triple, boolean isAdd) {
-        if(triple instanceof TemporalTriple){
+        //if(triple instanceof TemporalTriple){
         //System.out.println("fire "+triple.toString());
-        }
+        //}
         Functor lastFunctor = null;     // bound by TESTFunctorName
         PBV env = null;       // bound by CREATEToken
         Node n = null; // Temp workspace

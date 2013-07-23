@@ -12,6 +12,7 @@ import ie.tcd.cs.nembes.coror.graph.Node;
 import ie.tcd.cs.nembes.coror.graph.Triple;
 import ie.tcd.cs.nembes.coror.graph.TripleMatch;
 import ie.tcd.cs.nembes.coror.graph.temporal.TemporalTriple;
+import ie.tcd.cs.nembes.coror.reasoner.FGraph;
 //import ie.tcd.cs.nembes.microjenaenh.shared.ReificationStyle;
 import ie.tcd.cs.nembes.coror.util.iterator.ExtendedIterator;
 import ie.tcd.cs.nembes.coror.util.iterator.IteratorImpl;
@@ -101,7 +102,7 @@ public class GraphImpl extends GraphImplBase implements Graph {
 	    }
 	}
     }
-    
+
     public void performDelete( Triple t ) {
 	performDelete(t, false);
     }
