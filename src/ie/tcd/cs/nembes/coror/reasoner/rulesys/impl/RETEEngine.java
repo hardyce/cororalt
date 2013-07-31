@@ -177,9 +177,9 @@ public class RETEEngine implements TemporalFRuleEngineI {
             compileAlpha(rules, ignoreBrules);
             
             compileBeta();
-            
-            }
             findAndProcessAxioms();
+            }
+            
             /** i had to set this to true in order for the inserts to be read correctly after the initial reasoning, im
              * not sure why a wildcardrule is in reteengine I will have to ask**/
             wildcardRule=true;
@@ -681,6 +681,7 @@ System.out.println("burn this "+(endex-startex));
         if (deletesPending.size() > 0) deletesPending.remove(triple);
         
         addsPending.add(triple);
+       // System.out.println("add to add "+triple.toString());
         if (deduction) {
             infGraph.addDeduction(triple);
             
@@ -890,6 +891,10 @@ System.out.println("burn this "+(endex-startex));
      * Inject a single triple into the RETE network
      */
     private void inject(Triple t, boolean isAdd) {
+        /*if(t instanceof TemporalTriple){
+            System.out.println(((TemporalTriple)t).getTime());
+        }
+        */
         /*if(isAdd){
 System.out.println("add "+t.toString());
         }

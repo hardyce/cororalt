@@ -164,7 +164,7 @@ public class RETEConflictSet {
                         // E.g. RDFS rules can create assertions about literals
                         // that we can't record in RDF
                         if (isAdd) {
-                            
+                            //System.out.println(t.toString());
                             if ( ! context.contains(t)) {
                                
                                 engine.addTriple(t, true);
@@ -202,6 +202,7 @@ public class RETEConflictSet {
                                 //System.out.println(latest.toString());
                                 //System.out.println("hereIam");
                                 //engine.deleteTriple(latest, true);
+                                context.remove(t);
                                 
                                 engine.addTriple(temp, true);
                                 }
@@ -210,6 +211,7 @@ public class RETEConflictSet {
                             }
                         } else {
                             if ( context.contains(t)) {
+                                
                                 // Remove the generated triple
                                 engine.deleteTriple(t, true);
                                 

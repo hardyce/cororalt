@@ -52,7 +52,7 @@ public class TemporalPBV extends PBV {
      * @param end end of the time slot
      */
     public boolean within(long start, long end){
-        if( time >= start && time <= end) return true;
+        if( time >= start && time < end) return true;
         return false;
     }
     

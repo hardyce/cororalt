@@ -97,18 +97,22 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
      * change the count again. This is to maintain correct count for 
      */
     void fire(PBV env, boolean isAdd, boolean processed){
-
-       
+        boolean contains=false;
         // Store the new token in this store
+        Iterator get = otm.getAll(env.getEnvironment()[0]);
+        while(get.hasNext()){
+            if(get.next().equals(env))
+                {
+                contains=true;
+            }
+        }
+        //Count count = (Count)queue.get(env);
         
-        
-        
-        Count count = (Count)queue.get(env);
-        
-        if (count == null) {
+        if (!contains) {
+            //System.out.println("isnull");
             // no entry yet
             if (!isAdd) return;
-            queue.put(env, new Count(1));
+            //queue.put(env, new Count(1));
             Node[] environment = env.getEnvironment();
             /** places the mapping into the table, allowing for quick lookup**/
             
@@ -116,14 +120,44 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
                 
                     
                     otm.put(environment[y],env);  
+                    //if(env instanceof TemporalPBV){
+                       // TemporalPBV tenv = (TemporalPBV)env;
+                       // for(int u=0;u<tenv.getEnvironment().length;u++){
+                        //    System.out.println(tenv.getEnvironment()[u]);
+                        //}
+                        //System.out.println("tadd "+tenv.getTimeStamp());
+                   // }
                 
             }
             
             
         } else {
             if (isAdd) {
+                //System.out.println("here1");
+                //count.inc();
+                
+             if(env instanceof TemporalPBV){
+                // System.out.println("here2");
+                Node[] environment = env.getEnvironment();
                     
-                    count.inc();
+                Iterator all = otm.getAll(environment[0]);
+                while(all.hasNext()){
+                    Object next = all.next();
+                    if(next.equals(env)&&next instanceof TemporalPBV){
+                        //System.out.println("here3");
+                        //System.out.println(((TemporalPBV)next).getTimeStamp());
+                        //System.out.println(((TemporalPBV)env).getTimeStamp());
+                        if(((TemporalPBV)next).getTimeStamp()<((TemporalPBV)env).getTimeStamp()){
+                            for(int y=0;y<environment.length;y++){
+                            otm.remove(environment[y], env);
+                            //System.out.println("here4");
+                            otm.put(environment[y], env);
+                    }
+                        }
+                    }
+                }
+                    
+             }
                    /* 
                 int indexOf = queue.keySet().indexOf(env);
                 Object get = queue.keySet().get(indexOf);
@@ -140,15 +174,16 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
             } else {
                 //                if(!processed){
                 Node[] environment = env.getEnvironment();
-                    count.dec();
-                    if (count.getCount() == 0) {
+//                    count.dec();
+                    //if (count.getCount() == 0) {
+                        System.out.println("removed");
                         queue.remove(env);
                         /**remove from table**/
                         for(int y =0;y<environment.length;y++){
                         otm.remove(environment[y], env);
                         }
                         
-                    }
+                    //}
 //                }
             }
         }
@@ -173,20 +208,54 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
             /** below creates the iterator, only giving values that will be succesfully joined**/
             
             Iterator all=null;
+            
+            //System.out.println("iter creat");
+            
             for(int y=0;y<envNodes.length;y++){
+                //System.out.println(envNodes[y]);
                 if(all==null){
+                    
                 all = sibling.otm.getAll(envNodes[y]);
+               
+                
                 }
                 else{
                 all = new ConcatenatedIterator(all ,sibling.otm.getAll(envNodes[y]));
+                
                 }
             }
             
-            //for (Iterator i = sibling.queue.keySet().iterator(); i.hasNext(); ) {
+            /*
+            Set keySet = sibling.otm.keySet();
+            System.out.println("keyset");
+            Iterator iterator = keySet.iterator();
+            while(iterator.hasNext()){
+                Object next = iterator.next();
+            next.toString();  
+                Iterator all1 = sibling.otm.getAll(next);
+                while(all1.hasNext()){
+                    all1.next();
+                }
+            }
+            */
+            //System.out.println("iter creat");
+            
+           // for (Iterator i = sibling.queue.keySet().iterator(); i.hasNext(); ) {
               //  System.out.println(firecount);
-            for (Iterator i = all; i.hasNext(); ) {    
+            
+            //System.out.println(all==null);
+          for (Iterator i = all; i.hasNext(); ) {
                 //XXX use this when trace is not required.
                 PBV cand = ((PBV)i.next());
+                /*
+                if(cand instanceof TemporalPBV){
+                    int siz=cand.getEnvironment().length;
+                    for(int j =0;j<siz;j++){
+                    System.out.println(cand.getEnvironment()[j]);
+                    }
+                    System.out.println("next env");
+                }
+                */
                 candidate = cand.getEnvironment();
                 
 
@@ -204,6 +273,7 @@ public class RETEQueueNS extends RETESourceNode implements RETESinkNode, SharedN
 //                      as the nodes with the same values are often the same nodes so this might be a potential optimization.
 //                    if ( candidate[right[j]] != (envNodes[left[j]])) { 
                         matchOK = false;
+                        //System.out.println("no match");
                         break;
                     }
                 }

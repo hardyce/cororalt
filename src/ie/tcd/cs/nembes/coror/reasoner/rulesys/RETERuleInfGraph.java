@@ -33,7 +33,7 @@ public class RETERuleInfGraph extends BasicForwardRuleInfGraph {
     }  
     
     public void addnewTriple(Triple t){
-    fdata.getGraph().add(t);
+    //fdata.getGraph().add(t);
     fadd.getGraph().add(t);
 }
 
@@ -111,13 +111,13 @@ public class RETERuleInfGraph extends BasicForwardRuleInfGraph {
         if (fdata != null) {
             Graph data = fdata.getGraph();
             if (data != null) {
-                if(t.getTime()<=i){
-                 //fadd.getGraph().delete(t);   
+                if(t.getTime()<i){
+                 fadd.getGraph().delete(t);   
                 data.delete(t);
                 }
             }
         }
-        if(t.getTime()<=i){
+        if(t.getTime()<i){
         fdeductions.getGraph().delete(t);
         
         //engine.delete(t);
